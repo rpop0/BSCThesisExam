@@ -1,0 +1,64 @@
+{
+    "1. A process socket local address is equal to:": {
+        "port number + IP address": true,
+        "IP address": false,
+        "port number": false,
+        "IP address + hostname + port number": false
+      },
+      "2. Network layer protocol that reports on the success or failure of data delivery:": {
+        "IP": false,
+        "TCP": false,
+        "ARP": false,
+        "ICMP": true
+      },
+      "3. Which of the following services use UDP?": {
+        "SMTP": false,
+        "SNMP": true,
+        "FTP": false,
+        "TFTP": true,
+        "DHCP": true,
+        "HTTP": false
+      },
+      "4. Which of the following devices are layer 2 devices?": {
+        "bridge": true,
+        "repeater": false,
+        "router": false,
+        "switch": true,
+        "hub": false
+      },
+      "5. Which of the following IP addresses fall into the CIDR block of 115.64.4.0/22? (Choose two.)": {
+        "115.64.8.32": false,
+        "115.64.6.255": true,
+        "115.64.8.30": false,
+        "115.64.5.128": true
+      },
+      "6. What is the network topology where each node is connected to the two nearest nodes so that the\nentire network forms a circle?": {
+        "bus": false,
+        "ring": true,
+        "star": false,
+        "bus-star": false
+      },
+      "7. Which fields are contained within an Ethernet frame header?": {
+        "source and destination hardware addresses": true,
+        "source and destination network addresses": false,
+        "error correction code": false,
+        "authentication code": false
+      },
+      "8. Which of the following statements is true regarding a switch?": {
+        "it creates a single collision domain and a single broadcast domain": false,
+        "it creates separate collision domains but one broadcast domain": true,
+        "it creates separate collision domains and separate broadcast domains": false
+      },
+      "9. What is a valid IPv4 address example?": {
+        "144.92.254.253": true,
+        "144-92-43-178": false,
+        "144.92.256.176": false,
+        "144,92,43,178": false
+      },
+      "10. What does CSMA/CD stand for?": {
+        "Carrier Service Multiple Access with Collision Detection": false,
+        "Carrier Sense Multiple Access with Collision Avoidance": false,
+        "Carrier Sense Multiple Access with Collision Detection": true,
+        "Control Sense Multiple Access with Collision Direction": false
+      }
+}

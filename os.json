@@ -1,0 +1,100 @@
+{
+    "1. What causes a running thread to change its state, from Running to Blocked?": {
+        "any I/O event in the system": true,
+        "starting a new process in the system": false,
+        "terminating the running process": false,
+        "any context switch that happens in the system": false
+      },
+      "2. When designing an operating system for smartphones and other mobile devices, you should": {
+        "use bigger page sizes and more states for processes": false,
+        "use smaller page sizes and less states for processes": true,
+        "allow apps to run without interruption from the system, for maximizing user interaction": false,
+        "terminate apps if they run for too long, to avoid starvation of other processes": false
+      },
+      "3. It is required to use defragmentation in a file system in order to": {
+        "improve the speed of the context switching in the system": false,
+        "allow smaller seek times for mechanic drives": true,
+        "allow files to be read faster sequentially": true,
+        "reduce boot times for the operating system": true
+      },
+      "4. Suppose process A has a burst of 5, and starts at moment 0. Process B has a burst of 20, and starts at moment 5. A new process C is created at moment 3, with a burst of 3. Which of the following is true?": {
+        "in FIFO scheduling, process B runs before process C": false,
+        "in SJF scheduling, process A finishes before C starts": true,
+        "in Round-Robin scheduling (quantum = 3), the first process to execute after A is B": false,
+        "in SRTN (quantum = 3), processes execute as follows: A, C, B, A, B": false
+      },
+      "5. A 16-bit Von Neumann architecture has a page size of 4,096 bytes and 12 KB of RAM. Access to the pages of the system happen as follows: 5,15,15,5,10. Which of the following is true?": {
+        "there are 4 physical pages in the system": false,
+        "there are 3 physical pages in the system": true,
+        "there are 16 virtual pages in the system": true,
+        "the FIFO algorithm causes 2 page faults to be issued": false,
+        "in the FIFO algorithm, address 1782 belongs to the first virtual page": false
+      },
+      "6. Which of the following are true about memory management?": {
+        "smaller page sizes are favorable when accessing small memory data chunks": true,
+        "larger page sizes are favorable when accessing small memory data chunks": false,
+        "physical addresses usually have a significantly smaller range than virtual addresses": true,
+        "internal memory fragmentation can be resolved by the operating system": false,
+        "external memory fragmentation can be resolved by the operating system": true
+      },
+      "7. Assume you have a browser tab open in Windows, Linux or MacOS X, where you are playing an YouTube video in 4K (UltraHD) resolution. Which of the following could be true?": {
+        "the browser tab’s associated thread is more CPU-bound than I/O-bound": true,
+        "the browser tab’s associated thread is more I/O-bound than CPU-bound": true,
+        "the operating system will not schedule any other processes until playback is complete": false,
+        "new processes that are trying to execute during playback are placed in a FIFO waiting queue": false,
+        "interrupts are not allowed during YouTube playback": false
+      },
+      "8. Assume you are using a Von Neumann system with a CPU that has multiple physical cores. Which of the following is true?": {
+        "true parallelism can never be achieved through the kernel scheduler, unless the operating system is Linux or MacOS X": false,
+        "true parallelism can never be achieved through the kernel scheduler, unless the operating system is Windows and RAM memory is limited to 4 GB": false,
+        "the kernel can implement true parallelism in a multi-core CPU only if there are no bus limitations": true,
+        "in an interactive system, a pre-emptive scheduling algorithm is required to ensure responsiveness": true
+      },
+      "9. In a system with a single type of resources, processes A, B and C have a maximum requirement of 10, 20 and 30 resources of type R. An initial allocation is made, of 8, 18, and 28 resources is made for these three processes. Which of the following statements is true?": {
+        "the minimum number of resources required, so that the state of the system is considered still safe, is 6": false,
+        "the minimum number of resources required, so that the state of the system is considered still safe, is 2": true,
+        "if only 2 resources are available for an additional allocation, the entire system is in a deadlock": false,
+        "an additional allocation of 1 resource to process A will leave the system in a deadlock": true
+      },
+      "10. You are asked to design a process scheduling mechanism which favors short processes that perform I/O activities, while retaining the system’s interactive requirement, so that the user experience is satisfactory. Which of the following is true?": {
+        "a preemptive scheduling mechanism is preferred for all interactive systems": true,
+        "a non-preemptive scheduling mechanism is preferred in a situation such as the above": false,
+        "starvation of high-burst processes is possible in certain scenarios": true,
+        "statistically, processes offer the best response times when using the optimum quantum value,\ninstead of higher quantum values": true
+      },
+      "11. On an interactive operating system, which of the following statements are true:": {
+        "An user-level process can voluntarily deny pre-emption, to disallow other processes to run.": false,
+        "Page faults happen less often on systems with a high amount of external memory.": false,
+        "It is required to protect critical regions for read accesses, in order to prevent data corruption.": false,
+        "Setting a thread’s priority to a lower level does not impose a guarantee of that thread’s stall\nin the next scheduler execution cycle.": true,
+        "None of the above.": false
+      },
+      "12. A system with 1 CPU and 2 cores runs the following 2 threads: Thread 0: M = N-2 , Thread 1: N -= M/2 . If each instruction is atomic, which of the following are possible resulting values for the variables N and M, assuming that initially N = 1, M = 2?": {
+        "(N = 1.5, M = −1)": true,
+        "(N = 1.5, M = −1) or (N = 0.5, M = −1)": false,
+        "(N = 0, M = −1)": false,
+        "(N = 0, M = −2)": true,
+        "none of the above": false
+      },
+      "13. Assuming you have a system with 1 CPU and 4 cores, and 7 running threads, which of the following statements is true in an interactive operating system:": {
+        "There will never be more than 4 running threads at once.": false,
+        "The 7 threads are always scheduled in groups of 4 threads running at once.": false,
+        "In a CPU with a superscalar architecture, execution of the threads should be faster overall than on a CPU that is both non-superscalar and non-out-of-order.": true,
+        "You cannot play more than 4 YouTube videos at once on this CPU in this operating system.": false,
+        "All of the above.": false
+      },
+      "14. A 16-bit system with 16 KB of RAM and a page size of 4 KB has the following page accesses happening in the following order: 0, 1, 1, 0, 2, 1, 2, 0, 1. Which of the following statements are true about this system:": {
+        "This system has 16 page frames and 4 virtual pages.": false,
+        "This system has 16 virtual pages and 4 page frames.": true,
+        "The sequence of accesses to the pages above causes 3 page faults.": true,
+        "A pointer to an array of 128 characters that points to the address 0x0011 in memory, resides in virtual page number 11.": false,
+        "A pointer to an array of 32 characters that points to the address 0x0016 in memory, resides in virtual page number 0.": true
+      },
+      "15. You are asked to design an interactive operating system for users, whose main purpose is playing back YouTube videos. Which of the following choices should you make?": {
+        "To ensure videos will play back smoothly, you should consider scheduling computationally intensive processes with higher priority as opposed to I/O-bound processes.": true,
+        "To ensure network buffering happens fast enough, you should consider scheduling I/O-bound processes with higher priority as opposed to CPU-bound processes.": true,
+        "If the CPU is too slow to render the video smoothly, your OS must focus heavily on I/O to improve playback.": false,
+        "If the CPU is capable of rendering the video at 60fps smoothly, your OS no longer needs to\ndo any type of I/O at all.": false,
+        "None of the above.": false
+      }
+}

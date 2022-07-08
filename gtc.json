@@ -1,0 +1,125 @@
+
+{
+    "1. Which is the rank of the permutation ⟨4, 1, 6, 2, 3, 5⟩ in lexicographic order?": {
+        "376": false,
+        "378": true,
+        "380": false,
+        "720": false
+      },
+      "2. A message is a sequence of two types of signals: of type A which last for 1 second and of type B which last for 2 seconds. E.g., the message ABAAB lasts 7 seconds. How many different messages last 10 seconds?": {
+        "68": false,
+        "32": false,
+        "89": true,
+        "144": false
+      },
+      "3. In how many ways can be colored the following configuration by using 2 colors: red and black?": {
+        "64": false,
+        "48": true,
+        "128": false,
+        "36": false
+      },
+      "4. In how many ways can we split a group of 50 persons in 49 nonempty groups?": {
+        "50": false,
+        "1225": true,
+        "49": false,
+        "2450": false,
+        "19600": false
+      },
+      "5. In how many ways can we choose 5 fruits from a market stall if on the stall there are: 5 apples, 5 pears and 5 apricots?": {
+        "21": true,
+        "56": false,
+        "120": false,
+        "6": false,
+        "30": false
+      },
+      "6. Which of the following recurrence relations hold for any n > k > 0?": {
+        "(n/k) = (n-1/k) + (n-1/k-1)": true,
+        "{n/k} = {n-1/k} + k * {n-1/k-1}": false,
+        "{n/k} = k * {n-1/k} + {n-1/k-1}": true,
+        "[n/k] = [n-1/k] + (n-1) * [n-1/k-1]": false
+      },
+      "7. Which is the minimum weight spanning tree of the following connected graph? (hint: apply the Kruskal algorithm)": {
+        "43": false,
+        "40": true,
+        "36": false,
+        "41": false
+      },
+      "8. Which is the Prüfer sequence of the following tree?": {
+        "8, 3, 4, 5, 7, 6, 1, 9, 10, 11, 2": false,
+        "3, 4, 5, 7, 6, 1, 8, 2, 10, 11": false,
+        "8, 11, 9, 6, 1, 8, 8, 2, 2": true,
+        "8, 11, 9, 6, 1, 8, 2, 2, 8": false
+      },
+      "9. How many different trees with 5 nodes, labeled with numbers from 1 to 5, there exist?": {
+        "10": false,
+        "273": false,
+        "32": false,
+        "120": false,
+        "125": true
+      },
+      "10. In how many ways can we color the following graph G with three colors?": {
+        "0": false,
+        "288": true,
+        "336": false,
+        "1874": false
+      },
+      "11. Which of the following graphs are eulerian graphs and which ones are not?": {
+        "G1 : no, G2,G3 : yes": true,
+        "G1 : yes, G2,G3 : no": false,
+        "G1,G2 : yes, G3 : no": false,
+        "none": false,
+        "all of them are eulerian": false
+      },
+      "12. There are 3 types of Internet addresses:\n(a) Class A: these are of the form 0 b|1b2b3{bz4 . . . b}7\nnetid\nb|8b9 . .{.zb30b3}1\nhostid\n(b) Class B: these are of the form 10 b|2b3b4{z. . . b1}5\nnetid\nb|16b17 .{.z. b30b3}1\nhostid\n(c) Class C: these are of the form 110 b|3b4b5{z. . . b2}3\nnetid\nb|24b25 .{.z. b30b3}1\nhostid\nHow many different IPv4 addresses are available for the internet network connections?": {
+        "2^29": false,
+        "2^30 * 2^31": false,
+        "2^31": false,
+        "7 * 2^29": true,
+        "2^32": false
+      },
+      "13. In a drawer there are 8 brown socks and 12 black socks. A child picks socks from the drawer at random in the dark. How many socks must he take out to be sure that he picked at least two black socks?": {
+        "3": false,
+        "10": true,
+        "14": false,
+        "9": false
+      },
+      "14. How many integer numbers between 1 and 1000 are divisible with 7, but are not divisible with 3?": {
+        "93": false,
+        "95": true,
+        "92": false,
+        "136": false
+      },
+      "15. What is the total weight of a minimum spanning tree of this graph?": {
+        "229": true,
+        "216": false,
+        "230": false,
+        "234": false
+      },
+      "16. Let G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. What is the number of simple undirected graphs with n nodes labeled from 1\nto n.": {
+        "2^{n(n−1)/2}": true,
+        "2^n": false,
+        "n(n-1)/2": false,
+        "n-1": false,
+        "n(n-1)": false
+      },
+      "17. Let Mn be the set of matrices of dimension n×n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. What is the number of simple undirected graphs with n nodes labeled from 1\nto n ?": {
+        "2^{n(n−1)/2}": true,
+        "2^n": false,
+        "n(n-1)/2": false,
+        "n-1": false,
+        "n · (n-1)": false
+      },
+      "18. Let Mn be the set of matrices of dimension n×n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. Let In be the identity matrix of dimension n × n, and 1 ≤ p ≤ n. Consider\nthe following algorithm to compute the matrix B ∈ Mn: B = AG ⊕ In; for k := 1 to p do\nC = B ⊕ (B ⊙k B); B = C; What is the runtime complexity of this algorithm?": {
+        "Θ(p · n^2)": true,
+        "Θ(p · n)": false,
+        "Θ(p · n^3)": false,
+        "Θ(n)": false,
+        "Θ(p · 2^n)": false
+      },
+      "19. Let Mn be the set of matrices of dimension n×n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. Let In be the identity matrix of dimension n × n, and 1 ≤ p ≤ n. Consider\nthe following algorithm to compute the matrix B ∈ Mn: B = AG ⊕ In; for k := 1 to p do\nC = B ⊕ (B ⊙k B); B = C; Which of the following assertions holds when B[i][j] = 1?": {
+        "There is a path of length at most p + 1 from node i to node j.": true,
+        "There is a path of length p from node i to node j.": false,
+        "There is a path from node i to node j which goes through node p.": false,
+        "There is a path from node i to node j which goes through all nodes from the set {1, 2, . . . , p}.": false
+      }
+    }

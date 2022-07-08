@@ -1,0 +1,62 @@
+{
+    "1.Analyze the following code:\nclass A:\ndef __init__(self, s):\nself.s = s\ndef print(self):\nprint(s)\na = A(\"Welcome\")\na.print()\n": {
+        "The program has an error because class A does not have a constructor.": false,
+        "The program has an error because class A should have a print method with signature\nprint(self, s).": false,
+        "The program has an error because class A should have a print method with signature\nprint(s).": false,
+        "The program would run if the line print(s) is changed to print(self.s).": true
+      },
+      "2. What is the result of the execution of the following code?\nx = 2\nfor i in range(x):\nx += 1\nprint (x)\n": {
+        "0 1 2 3 4 . . .": false,
+        "0 1": false,
+        " 3 4": true,
+        "0 1 2 3": false
+      },
+      "3.Which is the output of the following code?\nnames1 = [’Amir’, ’Barry’, ’Charles’, ’Dao’]\nnames2 = names1\nnames3 = names1[:]\nnames2[0] = ’Alice’\nnames3[1] = ’Bob’\nsum = 0\nfor ls in (names1, names2, names3): if ls[0] == ’Alice’:\nsum += 1\nif ls[1] == ’Bob’:\nsum += 10\n\nprint(sum)": {
+        "11": false,
+        "12": true,
+        "21": false,
+        "22": false,
+        "33": false,
+        "0": false
+      },
+      "4. Which of the following is/are features of DocString?": {
+        "Provide a convenient way of associating documentation with Python modules, functions,\nclasses, and methods": true,
+        "Provide a convenient way of associating documentation only with Python classes, and methods": false,
+        "All functions should have a docstring": true,
+        "Providing documentation to a application is time-waste": false,
+        "Docstrings can be accessed by the __doc__ attribute on objects": true
+      },
+      "5. Which of the following statements are TRUE about generators (in Python):": {
+        "a) Generators are lazy in nature": true,
+        "b) Generators are eager in nature": false,
+        "c) Generators could make your program to perform faster if the values are generated only once": true,
+        "d) Generators could make your program to perform faster if the values are generated multiple times": true,
+        "e) Generators could make your program to perform slower": false
+      },
+      "6. Which statements is/are true about 'assertion' (in Python):": {
+        "Best way to test precondition violation": true,
+        "Can be disabled in production environments": true,
+        "An example of good defensive programming": true,
+        "Are used for debugging in production environments": false,
+        "Assertions and exceptions are used to provide feedback to the client": false
+      },
+      "7. Which is the output of the following code?\nclass A:\ndef __init__(self):\nself.calcI(30)\ndef calcI(self, i):\nself.i = 2 * i;\nclass B(A):\ndef __init__(self):\nsuper().__init__()\nprint(\"i from B is\", self.i)\ndef calcI(self, i):\nself.i = 3 * i;\nb = B()": {
+        "Just the __init__ method of class B gets invoked.": false,
+        "The __init__ method of class A gets invoked and it displays 'i from B is 0'": false,
+        "The __init__ method of class A gets invoked and it displays 'i from B is 60'.": false,
+        "The __init__ method of class A gets invoked and it displays 'i from B is 90'.": true
+      },
+      "8. Which of the following statements are true regarding the opening modes of a file?": {
+        "When you open a file for reading, if the file does not exist, an error occurs.": true,
+        "When you open a file for writing, if the file does not exist, an error occurs.": false,
+        "When you open a file for reading, if the file does not exist, the program will open an empty file": false,
+        "When you open a file for writing, if the file does not exist, a new file is created.": true,
+        "When you open a file for writing, if the file exists, the existing file is overwritten with the new content.": true
+      },
+      "9. Which of the following statements are true about the following code?\ns=0\ntry:\nf = open('test.txt' ,encoding = 'utf-8')\nfor i in f:\ns += len(i)\nfinally:f.close()\nprint(s)\n": {
+        "the program will print the size of an existing 'test.txt' file, in bytes": true,
+        "the program will crash because i is an integer": false,
+        "the program will crash if the file does not exist": true,
+        ") the program will print 0 if the file does not exist": false
+      }
+}
