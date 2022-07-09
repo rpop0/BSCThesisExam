@@ -1,5 +1,7 @@
 # BSC Exam test giver
-Simply run main.py using python3.9 or greater. Give one of the file names as input
+Prerequisites:
+- Python 3.9
+- A terminal capable of showing colors and unicode characters (Git Bash, WSL)
 
 When running main.py, you will be prompted to enter a file.
 Simply give the name of the subject you want to be tested for (E.g, "ads.json").
