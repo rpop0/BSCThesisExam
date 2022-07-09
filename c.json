@@ -63,10 +63,10 @@
     },
 
     "10. What will be the value of variable a (before return) by running the following C code:\n  int main(){\n    char a, a1=200, a2=110;\n    a = a1 + a2;\n    return 0;\n}\n": {
-        "a = 54": false,
+        "a = 54": true,
         "a = 310": false,
         "a = 182": false,
-        "a = -54": true
+        "a = -54": false
     },
 
     "11. What will be the value of variable “b” after execution of the following code:\n  unsigned char a; int b=0;\n  for (a=0; a<256; a++) { b++;}\n": {
