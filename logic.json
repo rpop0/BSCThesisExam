@@ -26,7 +26,7 @@
         "they are not related in any of the ways above": false
     },
 
-    "5. The formula:\n\tP ⇔ Q\nis a ______ of\nthe formulas\n\tQ ⇒ R\n\tR ⇒ (P ∧ Q)\n\tP ⇒ (Q ∨ R)\n": {
+    "5. The formula:\n\tP ⇔ Q\nis a ______ of the formulas\n\tQ ⇒ R\n\tR ⇒ (P ∧ Q)\n\tP ⇒ (Q ∨ R)\n": {
         "logically equivalent to the conjunction of": false,
         "a logical consequence of": true,
         "logically equivalent to the disjunction of": false
