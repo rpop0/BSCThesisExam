@@ -1,0 +1,115 @@
+{
+    "1. What’s wrong with the sequence:\n  int t[N], *low=t, *mid, *high=&t[N-1];\n  mid = (low+high) / 2;\n": {
+        "addition of two pointers is an illegal operation": true,
+        "a pointer can’t be initialized with an array": false,
+        "the initialization of low and high is incorrect": false,
+        "mid can’t be initialized with a real value (when low+high is odd!)": false
+    },
+
+    "2. Knowing that the . and the -> operator have equal precedence, higher than the precedence of the\n * operator and assuming the following declarations, which of the expressions bellow are correct?\n  struct point {\n    int x, y;\n  };\n  struct rectangle{\n    struct point p1, p2;\n  } *r[N];\n":{
+        "r[i].p1.x": false,
+        "r[i]->p1.x": true,
+        "(*r[i]).p1.x": true,
+        "*r[i].p1.x": false
+    },
+
+    "3. Which of the following storage classes is implicit, due to the place of the variable’s declaration:\n": {
+        "static": true,
+        "auto": true,
+        "register": false,
+        "extern": false
+    },
+
+    "4. Can two functions, neither of whom calls the other, communicate (share data)?\n": {
+        "no": false,
+        "yes, through messages": false,
+        "yes, through global variables": true
+    },
+
+    "5. Given float x=2.5; the value of the expression 3.0*x+10/4 is:\n": {
+        "10.0": false,
+        "9.5": true,
+        "of type double": true,
+        "of type float": false
+    },
+
+    "6. Which of the following correspond to predefined integer data types in C\n": {
+        "char": true,
+        "double": false,
+        "short": true,
+        "int": true,
+        "byte": false,
+        "long": true
+    },
+
+    "7. The type of p, used in the expression p->m is:\n": {
+        "pointer to some structure": true,
+        "the type of m": false,
+        "void *": false
+    },
+
+    "8. Knowing that 0123456789 is the memory address where the string constant is generated, which\n  is the result of evaluating the expression: 0123456789[i] if i=10?\n": {
+        "the expression is syntactically wrong": false,
+        "undefined": false,
+        "'\\0'": true,
+        "of type char": true
+    },
+
+    "9. What would the value of q-p be if:\n\n   int t[20], *p=t, *q=&t[19];\n": {
+        "19": true,
+        "20": false,
+        "t[19 ]- t[0]": false,
+        "It is illegal to substract a pointer from another pointer!": false
+    },
+
+    "10. What will be the value of variable a (before return) by running the following C code:\n  int main(){\n    char a, a1=200, a2=110;\n    a = a1 + a2;\n    return 0;\n}\n": {
+        "a = 54": false,
+        "a = 310": false,
+        "a = 182": false,
+        "a = -54": true
+    },
+
+    "11. What will be the value of variable “b” after execution of the following code:\n  unsigned char a; int b=0;\n  for (a=0; a<256; a++) { b++;}\n": {
+        "there is an infinite loop": true,
+        "0": false,
+        "256": false,
+        "compilation error": false,
+        "-1": false
+    },
+
+    "12. Select the correct statement regarding the following lines:\n  const int a = 12;\n  #define b 12\n": {
+        "there is no difference between const and define": false,
+        "the const definition will allocate space in memory": true,
+        "b will be processed by the preprocesor and will not appear at compilation": true,
+        "we cannot see in debug the constant b but we can see the constant a": true
+    },
+
+    "13. Which of the following statements will generate a memory allocation:\n": {
+        "int x;": true,
+        "typedef int integer": false,
+        "struct {char x; long y; short z};": false,
+        "double *p;": true
+    },
+
+    "14. Which of the following allocations occupies more space:\n": {
+        "int *pi;": false,
+        "char *pc;": false,
+        "long *pl;": false,
+        "double **ppd;": false,
+        "none of them (all pointers have the same amount of bytes)": true
+    },
+
+    "15. What will be the output after running the following code :\n  int compute(int x){\n    static int b=20;\n    b--;\n    return b+x;\n  }\n  int main (void){\n    int i;\n    for (i=3;i>=0;i--)\n    printf(\"%d \",compute(i));\n    return 0;\n  }\n": {
+        "22 20 18 16": true,
+        "23 22 21 20": false,
+        "23 21 19 17": false,
+        "3 2 1 0": false
+    },
+
+    "16. Let suppose that we have an int variable x and an int* pointer variable p. We have initialized x\n  by 2 and p to the address of x. Which of the following statements are true?\n": {
+        "The address of x and the value of p is the same": true,
+        "The value of x and the value of *p is the same": true,
+        "The address of p and the value of &x are equal": false,
+        "&x == *p": false
+    }
+}
