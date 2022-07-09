@@ -32,10 +32,10 @@
     },
 
     "5. Three of the following four expressions find the names of all students who did not apply to major in CS or PH. \n Which one finds something different? (Hint: You should not assume that the student names are unique.)\n": {
-        "πsName(Student >< \n  (πsID(Student) - (πsID(σmajor='CS'Apply) U πsID(σmajor='PH'Apply))))": false,
-        "πsName(Student >< \n  (πsIDStudent - πsID(σmajor='CS' v major='PH'Apply)))": false,
-        "πsName(πsID,sNameStudent - \n  πsID,sName(Student >< πsID(σmajor='CS' v major='PH'Apply)))": false,
-        "πsNameStudent - \n  πsName(Student >< πsID(σmajor='CS' v major='PH'Apply))": true
+        "πsName(Student >< \n      (πsID(Student) - (πsID(σmajor='CS'Apply) U πsID(σmajor='PH'Apply))))": false,
+        "πsName(Student >< \n      (πsIDStudent - πsID(σmajor='CS' v major='PH'Apply)))": false,
+        "πsName(πsID,sNameStudent - \n      πsID,sName(Student >< πsID(σmajor='CS' v major='PH'Apply)))": false,
+        "πsNameStudent - \n      πsName(Student >< πsID(σmajor='CS' v major='PH'Apply))": true
     },
 
     "6. Consider the following query:\n\n  SELECT * FROM Student, Apply, College\n  WHERE Student.sID = Apply.sID\n  AND Apply.cName = College.cName\n  AND Student.Bac > 6\n  AND College.cName = 'UVT'\n\n Suppose we can create two indexes, and assume all indexes are tree-based. Which two indexes do you think would be most useful for speeding up query execution?\n": {
