@@ -1,0 +1,109 @@
+{
+    "1. Which of the following are properties of a candidate key?\n": {
+        "Uniqueness": true,
+        "Irreducibility": true,
+        "Completeness": false,
+        "Domain segregation": false
+    },
+
+    "2. Which are database languages?\n": {
+        "Data Definition Language (DDL)": true,
+        "Database Distribution Language (DDL)": false,
+        "Data Manipulation Language (DML)": true,
+        "Data Maintenance Language (DML)": false,
+        "Data Query Language (DQL)": true,
+        "Data Analysis Language (DAL)": false
+    },
+
+
+    "3. Given the relation R(A) with two tuples in it {(1), (2)} and the following two transactions \n\n    (T1) UPDATE R SET A = A*2 \n    (T2) SELECT AVG(A) FROM R; SELECT MAX(A) FROM R \n\n    If T2 is executed under repeatable read isolation level, which statements are true?\n": {
+        "IF AVG(A) = 1.5 then MAX(A) equals to 2 or 4": false,
+        "AVG(A) = 1.5 and MAX(A) = 2 , always": false,
+        "Possible values for AVG(A) are 1.5 or 3, and possible values for MAX(A) are 2 or 4": true,
+        "If MAX(A) = 4 then AVG(A) = 1.5": false
+    },
+
+    "4. Which of the following are issues addressed by normalization?": {
+        "Deletion anomalies": true,
+        "Insertion anomalies": true,
+        "Modification anomalies": true,
+        "Data redundancy": true,
+        "Data volume": false
+    },
+
+    "5. Three of the following four expressions find the names of all students who did not apply to major in CS or PH. \n Which one finds something different? (Hint: You should not assume that the student names are unique.)\n": {
+        "πsName(Student ▷◁ \n  (πsID(Student) - (πsID(σmajor='CS'Apply) ∪ πsID(σmajor='PH'Apply))))": false,
+        "πsName(Student ▷◁ \n  (πsIDStudent - πsID(σmajor='CS' v major='PH'Apply)))": false,
+        "πsName(πsID,sNameStudent - \n  πsID,sName(Student ▷◁ πsID(σmajor='CS' v major='PH'Apply)))": false,
+        "πsNameStudent - \n  πsName(Student ▷◁ πsID(σmajor='CS' v major='PH'Apply))": true
+    },
+
+    "6. Consider the following query:\n\n  SELECT * FROM Student, Apply, College\n  WHERE Student.sID = Apply.sID\n  AND Apply.cName = College.cName\n  AND Student.Bac > 6\n  AND College.cName = 'UVT'\n\n Suppose we can create two indexes, and assume all indexes are tree-based. Which two indexes do you think would be most useful for speeding up query execution?\n": {
+        "Student.sID and Student.Bac": false,
+        "Apply.cName and College.cName": false,
+        "Apply.sID and College.cName": true,
+        "Apply.sID and Student.Bac": false
+    },
+
+    "7. What is the result returned by the following SQL query?\n\n  SELECT b.NameFROM Employee a, Employee b, SalaryLevel c, SalaryLevel d\n  WHERE a.ManagerId = b.Id\n  AND b.Salary BETWEEN c.MinSalary AND c.MaxSalary\n  AND b.Salary*1.25 BETWEEN d.MinSalary AND d.MaxSalary\n  AND c.Level+1 = d.Level\n": {
+        "Returns employees' names who would move to the next salary level after a 25% wage increase.": false,
+        "Returns managers' names who would move to the next salary level after a 25% wage increase.": true,
+        "Returns the employees who would move to the next salary level after a 25% wage increase if their salary is between the minimum and maximum wage.": false,
+        "None of the above": false
+    },
+
+    "8. The table https://prnt.sc/Ih4ezVOx4XOZ contains a representative data sample for all the functional dependencies in a real-life data set.\n Which are the functional dependencies that hold for the data below?\n": {
+        "A → {B, C}, E → {F}": true,
+        "D → {A, B, C, E, F}, F → {E}": false,
+        "{A, E} → {D}": true,
+        "{D, E} → {A, B}": false
+    },
+
+    "9. Considering the relation R(A,B,C,D,E,F) with attributes and functional dependencies from the previous question https://prnt.sc/8YzgSS3eFpKq , which of the following sets of attributes is/are candidate keys in R?\n": {
+        "{B, F}": false,
+        "{A, E}": true,
+        "{A, E, D}": false,
+        "{A}": false
+    },
+
+    "10. Given R defined in the previous question, which of the below statements are false?\n": {
+        "The relation R is in the first normal form.": false,
+        "The relation R is in the second normal form.": true,
+        "In the relation R the values in column B determines the values in column A.": true,
+        "The relation R can not contain two tuples with different values in column D when the values in column A match.": true
+    },
+
+    "11. Consider the relation R(A,B,C,D,E) with the following functional dependencies: D → C, {C,E} → A,D → A, {B,E} → D. Which of the following attribute sets is a superkey of R?\n": {
+        "{B, E}": true,
+        "{C, D}": false,
+        "{A, C}": false,
+        "{A, C, E}": false
+    },
+
+    "12. Given the E/R diagram below https://prnt.sc/i1dW98fOu7ZD \n":{
+        "Courses(CID, title)": true,
+        "Students(SID, name)": true,
+        "Enroll(SID,CID)": false,
+        "Enroll(SID, name, CID, title, grade)": false,
+        "Students(SID, name, CID)": false,
+        "Enroll(SID, CID, grade)": true
+    },
+
+    "13. The relations R(A,B) and S(B,C) contain the following records: R=(1,2), (2,2), (5,1) and S=(2,2), (2, 1). Let the view V be defined by the following statement\n\n  SELECT A, C FROM R JOIN S ON R.B = S.B \n  Which of the following records are included in V?\n": {
+        "(1,1)": true,
+        "(1,2)": true,
+        "(2,1)": true,
+        "(2,2)": true,
+        "(5,1)": false,
+        "(5,2)": false,
+        "(1,5)": false,
+        "(2,5)": false
+    },
+
+    "14. Select the statements that can be used to complete the following SQL code block\n\n  BEGIN TRANSACTION\n  SELECT COUNT(*) FROM Enrollments WHERE Accepted = 1\n  UPDATE Enrollments SET Accepted = 1 WHERE CourseTitle = 'Data Base'\n": {
+        "END TRANSACTION": false,
+        "END": false,
+        "COMMIT": true,
+        "ROLLBACK TRANSACTION": true
+    }
+}
