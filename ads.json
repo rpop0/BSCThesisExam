@@ -1,123 +1,123 @@
 {
-  "Let f(n) = n2, g(n) = n log n, h(n) = sin(n). Which of the following statements is true? There may be more than one correct answer.": {
+  "1. Let f(n) = n2, g(n) = n log n, h(n) = sin(n). Which of the following statements is true? There may be more than one correct answer.": {
     "f = Θ(g).": false,
     "h = o(g).": true,
     "f = Ω(h).": true,
     "h = O(g).": true
   },
 
-  "A recursive program satisfies equation T (n) = 9T (n/3) + Θ(n2). What can we say about T (n)? There may be several correct answers.": {
+  "2. A recursive program satisfies equation T (n) = 9T (n/3) + Θ(n2). What can we say about T (n)? There may be several correct answers.": {
     "T (n) = O(n log n)": false,
     "T (n) = Ω(n2).": true,
     "T (n) = Θ(n2).": false,
     "T (n) = O(n3).": true
   },
 
-  "In which of the following data structures does searching an item have worst-case complexity Θ(log n)? There may be more than one.": {
+  "3. In which of the following data structures does searching an item have worst-case complexity Θ(log n)? There may be more than one.": {
     "Linked lists.": false,
     "Heaps.": false,
     "Red-black trees, ": true,
     "Splay trees": false
   },
 
-  "Which binary tree traversal can be used to list all numbers in a binary search tree in sorted order? There may be more than one correct answer.": {
+  "4. Which binary tree traversal can be used to list all numbers in a binary search tree in sorted order? There may be more than one correct answer.": {
     "Breadth-first search.": false,
     "Preorder.": false,
     "Inorder.": true,
     "Postorder.": false
   },
 
-  "Which of the following sorting methods is not a comparison-based sort? There may be more than one right answer.": {
+  "5. Which of the following sorting methods is not a comparison-based sort? There may be more than one right answer.": {
     "Quicksort.": false,
     "Radix Sort.": true,
     "Insertion Sort": false,
     "HeapSort.": false
   },
-  "Which of the following problems has an easy algorithm with complexity O(n log n)? There may be more than one right answer":{
+  "6. Which of the following problems has an easy algorithm with complexity O(n log n)? There may be more than one right answer":{
     "Given a list L of n integers, find three numbers x, y, z ∈ L (if they exist) such that x + y = z": false,
     "Given a list L of n integers and a target value z, find two numbers in x, y ∈ L (if they exist) such that x + y = z.": true,
     "Given a list L of n integers and a target value z, find two numbers in x, y ∈ L (if they exist) such that x − y = z.": true,
     "Given a list L of n integers, find three numbers x, y, z ∈ L (if they exist) such that x+y +z = 0.": false
   },
 
-  "Which of the following algorithms correctly computes the length of a longest increasing subse-quence problem and has complexity O(n2) ? There may be more than one right answer.": {
+  "7. Which of the following algorithms correctly computes the length of a longest increasing subse-quence problem and has complexity O(n2) ? There may be more than one right answer.": {
     "Put the numbers in the list in piles of decreasing numbers. A new number is added greedily to the first pile it can be added to, or starts a new pile if it cannot be added to any existing pile. The length of the LIS is the number of piles": true,
     "We run a greedy algorithm, maintaining a list of increasing numbers. When processing a new number we add it to the LIS if possible, we discard it and proceed otherwise.": false,
     "We run a backtracking algorithm, maintaining the list of the biggest LIS seen so far. When encountering a new number we add it to the sequence if possible. If not we backtrack and continue with the next sequence.": false,
     "We solve the problem by dynamic programming, computing the length of the LIS subsequence ending in a given term ak of the sequence. We then take the maximum of the so-computed LIS’s.": true
   },
 
-  "We are given a list of courses, each with a start and an end time. We only have one room and want to schedule as many of these courses as possible. Which of the following algorithms finds an optimal solution? There may be more than one correct answer.": {
+  "8. We are given a list of courses, each with a start and an end time. We only have one room and want to schedule as many of these courses as possible. Which of the following algorithms finds an optimal solution? There may be more than one correct answer.": {
     "Greedily choose the shortest courses.": false,
     "Greedily choose courses that start first.": false,
     "Greedily choose courses that end first.": true,
     "Sort courses by their endtime. Compute: for each course Ck, a longest sequence of courses that ends with Ck. Take the best such sequence over all k’s.": true
   },
 
-  "A recursive algorithm reduces solving the problem on inputs of size n to solving four subproblems on size n/2 and then combining the results. The combining step takes f (n) steps. We want our algorithm to have complexity O(n2). Which of the following are acceptable complexities for the combining step? There may be several right answers.": {
+  "9. A recursive algorithm reduces solving the problem on inputs of size n to solving four subproblems on size n/2 and then combining the results. The combining step takes f (n) steps. We want our algorithm to have complexity O(n2). Which of the following are acceptable complexities for the combining step? There may be several right answers.": {
     "f (n) = O(1).": true,
     "f (n) = O(n).": true,
     "f (n) = O(n log n).": true,
     "f (n) = Θ(n2).": false
   },
 
-  "What is the complexity of inserting a new item in a sorted linked list of integers, such that the list remains sorted?": {
+  "10. What is the complexity of inserting a new item in a sorted linked list of integers, such that the list remains sorted?": {
     "O(1).": false,
     "Θ(1).": false,
     "O(n).": true,
     "Θ(log n).": false
   },
 
-  "What data structure can we use to implement an iterative pre-order tree traversal?": {
+  "11. What data structure can we use to implement an iterative pre-order tree traversal?": {
     "Queue": false,
     "Stack": true,
     "Hash Table": false,
     "Red-black tree": false
   },
 
-  "What is the complexity of computing the median ?": {
+  "12. What is the complexity of computing the median ?": {
     "Θ(n).": true,
     "Θ(n log n).": false,
     "Θ(1)": false,
     "Θ(n2).": false
   },
 
-  "In a red-black tree which of the following is not necessarily true? There may be several correct answers.": {
+  "13. In a red-black tree which of the following is not necessarily true? There may be several correct answers.": {
     "The root is red.": true,
     "The root is black.": false,
     "Every path from the root to leaves has the same number of red nodes.": true,
     "A black parent can only have red children.": true
   },
 
-  "Which of the following is correct? There may be several correct answers.":{
+  "14. Which of the following is correct? There may be several correct answers.":{
     "The worst-case complexity of insert, delete, search operations in a binary search tree is O(log n).": false,
     "The worst-case complexity of insert, delete, search operations in an AVL tree is O(log n).": true,
     "The worst-case complexity of insert, delete, search operations in a splay tree is O(log n).": false,
     "The worst-case complexity of insert, delete, search operations in a red-black tree is O(log n).": true
   },
 
-  "Which of the following sorting algorithm is not subject to the Ω(n log n) lower bound for sorting?": {
+  "15. Which of the following sorting algorithm is not subject to the Ω(n log n) lower bound for sorting?": {
     "Counting sort.": true,
     "Heapsort.": false,
     "Radix Sort.": true,
     "MergeSort.": false
   },
 
-  "Consider two strings A = 'abcca' and B = 'abacbcaa'. Let x be the length of the longest common subsequence (not necessarily contiguous) between A and B and let y be the number of such longest common subsequences between A and B. Then x + 100y = . . ..": {
+  "16. Consider two strings A = 'abcca' and B = 'abacbcaa'. Let x be the length of the longest common subsequence (not necessarily contiguous) between A and B and let y be the number of such longest common subsequences between A and B. Then x + 100y = . . ..": {
     "304": false,
     "305": false,
     "405": false,
     "205": true
   },
 
-  "Suppose we sort n ≥ 3 values using quicksort, and after the first pivoting there are equally many numbers on the left of the pivot as they are on the right. Which of the following are true? There may be multiple answers.": {
+  "17. Suppose we sort n ≥ 3 values using quicksort, and after the first pivoting there are equally many numbers on the left of the pivot as they are on the right. Which of the following are true? There may be multiple answers.": {
     "All the elements could have been the pivot.": false,
     "The pivot is the median": true,
     "The pivot is not the maximum.": true,
     "none of the other statements": false
   },
 
-  "What is the second operation needed for inserting a value x at the front of a singly linked list? We assume the list is represented by one pointer head only.": {
+  "18. What is the second operation needed for inserting a value x at the front of a singly linked list? We assume the list is represented by one pointer head only.": {
     "allocate a node with the value x.": false,
     "x.next = head.": true,
     "head.prev = x": false,
@@ -125,28 +125,28 @@
     "none of the other options.": false
   },
 
-  "A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. What is the formula which defines the relation grandpa(i, j) in a binary min-heap ?": {
+  "19. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. What is the formula which defines the relation grandpa(i, j) in a binary min-heap ?": {
     "(4 · j + 3 ≤ i) ∧ (i ≤ 4 · j + 6)": true,
     "(4 · i + 3 ≤ j) ∧ (j ≤ 4 · i + 6)": false,
     "j = ⌊i/4⌋.": false,
     "(4 · j + 1 ≤ i) ∧ (i ≤ 4 · j + 2)": false
   },
 
-  "A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). What is the maximum number of nodes in a binary min-heap with depth h ?": {
+  "20. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). What is the maximum number of nodes in a binary min-heap with depth h ?": {
     "2h+1 − 1": true,
     "2h": false,
     "h2 − 1": false,
     "2h−1 + 1": false
   },
 
-  "A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). (i) If A is a binary min-heap then A is sorted in the ascending order of the keys from its nodes? True/False (ii) If A is sorted in the ascending order of the keys from its nodes then A is a binary min-heap? True/False": {
+  "21. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). (i) If A is a binary min-heap then A is sorted in the ascending order of the keys from its nodes? True/False (ii) If A is sorted in the ascending order of the keys from its nodes then A is a binary min-heap? True/False": {
     "(i) True (ii) False": false,
     "(i) False (ii) True": true,
     "(i) False (ii) False": false,
     "(i) True (ii) True": false
   },
 
-  "A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. The What is the runtime complexity of the deletion of the node with minimum key from a binary min-heap with n nodes?": {
+  "22. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. The What is the runtime complexity of the deletion of the node with minimum key from a binary min-heap with n nodes?": {
     "O(log n)": true,
     "O(1)": false,
     "Θ(n log n)": false,
