@@ -63,7 +63,7 @@
         "336": false,
         "1874": false
       },
-      "11. Which of the following graphs are eulerian graphs and which ones are not?": {
+      "11. Which of the following graphs are eulerian graphs and which ones are not? https://prnt.sc/_xYHfmnxMHea": {
         "G1 : no, G2,G3 : yes": true,
         "G1 : yes, G2,G3 : no": false,
         "G1,G2 : yes, G3 : no": false,
