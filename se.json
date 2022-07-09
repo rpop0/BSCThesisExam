@@ -1,0 +1,134 @@
+{
+    "1. Software verification can imply\n": {
+        "automatic static analysis": true,
+        "assesing usefulness and usability of the software in operational situations.": false,
+        "debugging": false,
+        "software inspections": true,
+        "testing to prove error existence": true,
+        "verify that software meets user requirements": false
+    },
+
+    "2. State machine diagram shows\n": {
+        "system functions": false,
+        "system response to internal events": true,
+        "system response to external events": true,
+        "interactions between objects in the system": false,
+        "data structures": false,
+        "interactions between actors and the system": false,
+        "data flow in the system": false
+    },
+
+    "3. Agile methods in software development imply\n": {
+        "Incremental delivery": true,
+        "Customer involvement during development process": true,
+        "Establishing normative processes for team working": false,
+        "Periodic activities to eliminate complexity from the system": true,
+        "Modeling the whole software before writting the code": false
+    },
+
+    "4. Select the cases in which only concepts are reused:\n": {
+        "Software services": false,
+        "Design patterns": true,
+        "Program libraries": false,
+        "Architectural patterns": true
+    },
+
+    "5. Consider the following class diagram. https://i.imgur.com/0yk0JcF.png\nCheck the true statements?\n": {
+        "An object of type ComputeScience contains a collection of objects of type Student": true,
+        "Class Questionnaire has a public attribute of type String": false,
+        "Class ComputerScience has a public operation addStudent(s:Student)": true,
+        "Class ComputerScience has a private operation setSchedule(s:String)": false,
+        "Class Tutor is superclass for the class Masterand": true,
+        "Class ComputerScience defines a composition of objects of type Questionnaire": true,
+        "A unidirectional association exists between class ComputerScience and class Tutor": false,
+        "Class ComputerScience inherits interface Specialization.": false,
+        "Class Tutor defines an aggregate of objects of type Masterand.": false
+    },
+
+    "6. Consider the following class diagram. https://i.imgur.com/1W7onVs.png\nWhich sequence of Java code correctly and completely describes the relations of class Proiect?\n": {
+        "class Project extends Student {\n  private Collection <UMLDiagram> diagrams = new LinkedList<>();\n  private SourceCode code;\n  ...}": false,
+        "class Project {\n  private Collection <Student> students;\n  private Collection <UMLDiagram> diagrams = new LinkedList<>();\n  private SourceCode code;\n  ...}": true,
+        "class Project {\n  private Student student;\n  private UMLDiagram diagram;\n  private SourceCode code;\n  ...}": false,
+        "class Project {\n  private Collection <Student> students = new LinkedList<>();\n  private Collection <UMLDiagram> diagrams;\n  private SourceCode code;\n  ...}": false
+    },
+
+    "7. Consider the following class diagram. https://i.imgur.com/zEJp9jr.png\nWhich sequence of Java code correctly and completely describes the relations of class Journal?\n": {
+        "class Journal extends OnlineJurnal implements Product {\n  private Collection <Article> articles;\n  ...}": false,
+        "class Journal implements Product {\n  private Collection <Article> articles = new ArrayList<>();\n  private OnlineJurnal jurnal;\n  ...}": false,
+        "class Journal implements Product {\n  private Collection <Article> articles = new ArrayList<>();\n  ...}": true,
+        "class Journal extends OnlineJurnal {\n  private Collection <Article> articles = new ArrayList<>();\n  private Product product;\n  ...}": false
+    },
+
+    "8. Consider the following class diagram. https://i.imgur.com/P9AaVEt.png\nCheck the complete and correct description of the relations represented on the diagram:\n": {
+        "Bidirectional association between classes Project and SourceCode; composition between\nclasses Project (composite) and UMLDiagram (component); aggregation between classes\nProject (aggregate) and Student (component); generalization between interface IStudent\n(implemented) and class Student (implements); realization between classes Student (super-\nclass) and class ScholarshipStudent( subclass).": false,
+        "Bidirectional association between classes Project and SourceCode; composition between\nclasses Project (composite) and UMLDiagram (component); aggregation between classes\nProject (aggregate) and Student (component); realization between interface IStudent (im-\nplemented) and class Student (implements); generalization between classes Student (super-\nclass) and class ScholarshipStudent (subclass).": true,
+        "Bidirectional association between classes Project and SourceCode; aggregation between\nclasses Project (aggregate) and UMLDiagram (component); composition between classes\nProject (composite) and Student (component); generalization between interface IStudent\n(implemented) and class Student (implements); realization between classes Student (super-\nclass) and class ScholarshipStudent (subclass).": false,
+        "Bidirectional association between classes Project and SourceCode; composition between\nclasses UMLDiagram (composite) and Project (component); aggregation between classes\nStudent (aggregate) and Project (component); realization between interface IStudent (im-\nplemented) and class Student (implements); generalization between classes Student (super-\nclass) and class ScholarshipStudent (subclass)": false
+    },
+
+    "9. Consider the following class diagram. https://i.imgur.com/TqGdAEh.png\nWhich sequence of Java code correctly describes the relationship between classes Student and Project?\n": {
+        "class Student extends Project{...}\n\nclass Project{...}": false,
+        "class Project extends Student{...}\n\nclass Student{...}": false,
+        "class Project {\n  private Collection <Student> ...}\n\nclass Student{...}": true,
+        "class Project {\n  private Collection <Student> ...}\n\nclass Student {\n  private Project project; ...}": false,
+        "class Project {\n  private Collection <Student> ...}\n\nclass Student {\n  private Collection<Project> projects; ...}": false
+    },
+
+    "10. Consider the following sequence diagram. https://i.imgur.com/1cXn1U8.png\nWhich operations of class RegistrationControler result from it?\n": {
+        "getCourses()": true,
+        "display(offeredCourses)": false,
+        "register(student, selectedCourses)": true,
+        "new Schedule(selectedCourses)": false,
+        "addSchedule(theSchedule)": false,
+        "displayMsg('OK')": false
+    },
+
+    "11. Consider the following sequence diagram. https://i.imgur.com/nhKq2cv.png\nCheck the classes from which are instantiated the objects implied in the interaction:\n": {
+        "RegistrationForm": true,
+        "RegistrtationControler": true,
+        "selectedCourses": false,
+        "current": false,
+        "Student": true,
+        "Schedule": true,
+        "theSchedule": false
+    },
+
+    "12. Consider the following robustness diagram. https://i.imgur.com/avEh2Te.png\nWhich statements are true?\n": {
+        "Home page is a boundary object": true,
+        "GetBooksList can be a persistent object": false,
+        "DisplayLinks is an object for interfacing with the system": false,
+        "GetBooksList could be implemented as a method of an entity class": true,
+        "GetBooksList can be a persistent object.": false,
+        "BooksList is an object for interfacing with the system.": false,
+        "Catalog is an entity object.": true
+    },
+
+    "13. Select the pair of terms to be filled in the spaces of the next statement: \n In Essence 'Checkpoint construction' game, a checkpoint is a set of ____ to be achieved at a\nspecific point in time in a software engineering endeavor AND is expressed in terms of ____ .'\n": {
+        "criteria / activities": false,
+        "components / roles": false,
+        "alphas / activity spaces": false,
+        "criteria / alpha states": true,
+        "alpha states / criteria": false
+    },
+
+    "14. Realize the correct mapping between the concept and its definition: https://i.imgur.com/svkhbdS.png\n": {
+        "a – 5, b – 1, c – 4, d – 3, e – 2": true,
+        "a – 5, b – 3, c – 4, d – 1, e – 2": false,
+        "a – 2, b – 1, c – 3, d – 4, e – 5": false,
+        "a – 1, b – 2, c – 3, d – 4, e – 5": false,
+        "a – 3, b – 2, c – 4, d – 5, e – 1": false
+    },
+
+    "15. Check the methods to avoid introducing faults into the program developing process.\n": {
+        "Every class should have a single responsibility": true,
+        "Use regular expressions to validate input values": false,
+        "Avoid deeply nested conditional statements": true,
+        "Logging the interactions of the users with the program": false,
+        "Replace the body of a method with a more clear algorithm that returns the same result": true,
+        "Minimize the depth of inheritance hierarchies": true,
+        "Automatically save the user’s data at set intervals": false,
+        "Identify the aspects of the application that vary and separate them from what stays the same.": true,
+        "Check input values against the range defined by input rules": false,
+        "Using assertions to check results from an external service": false
+    }
+}
