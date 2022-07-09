@@ -36,7 +36,7 @@
   "6. Which of the following problems has an easy algorithm with complexity O(n log n)? There may be more than one right answer":{
     "Given a list L of n integers, find three numbers x, y, z ∈ L (if they exist) such that x + y = z": false,
     "Given a list L of n integers and a target value z, find two numbers in x, y ∈ L (if they exist) such that x + y = z.": true,
-    "Given a list L of n integers and a target value z, find two numbers in x, y ∈ L (if they exist) such that x − y = z.": true,
+    "Given a list L of n integers and a target value z, find two numbers in x, y ∈ L (if they exist) such that x - y = z.": true,
     "Given a list L of n integers, find three numbers x, y, z ∈ L (if they exist) such that x+y +z = 0.": false
   },
 
@@ -125,28 +125,28 @@
     "none of the other options.": false
   },
 
-  "19. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. What is the formula which defines the relation grandpa(i, j) in a binary min-heap ?": {
+  "19. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m - 1] with two extra attributes: the capacity A.length = 2m - 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. What is the formula which defines the relation grandpa(i, j) in a binary min-heap ?": {
     "(4 · j + 3 ≤ i) ∧ (i ≤ 4 · j + 6)": true,
     "(4 · i + 3 ≤ j) ∧ (j ≤ 4 · i + 6)": false,
     "j = ⌊i/4⌋.": false,
     "(4 · j + 1 ≤ i) ∧ (i ≤ 4 · j + 2)": false
   },
 
-  "20. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). What is the maximum number of nodes in a binary min-heap with depth h ?": {
-    "2h+1 − 1": true,
+  "20. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m - 1] with two extra attributes: the capacity A.length = 2m - 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). What is the maximum number of nodes in a binary min-heap with depth h ?": {
+    "2h+1 - 1": true,
     "2h": false,
-    "h2 − 1": false,
-    "2h−1 + 1": false
+    "h2 - 1": false,
+    "2h-1 + 1": false
   },
 
-  "21. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). (i) If A is a binary min-heap then A is sorted in the ascending order of the keys from its nodes? True/False (ii) If A is sorted in the ascending order of the keys from its nodes then A is a binary min-heap? True/False": {
+  "21. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m - 1] with two extra attributes: the capacity A.length = 2m - 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). (i) If A is a binary min-heap then A is sorted in the ascending order of the keys from its nodes? True/False (ii) If A is sorted in the ascending order of the keys from its nodes then A is a binary min-heap? True/False": {
     "(i) True (ii) False": false,
     "(i) False (ii) True": true,
     "(i) False (ii) False": false,
     "(i) True (ii) True": false
   },
 
-  "22. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m − 1] with two extra attributes: the capacity A.length = 2m − 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. The What is the runtime complexity of the deletion of the node with minimum key from a binary min-heap with n nodes?": {
+  "22. A binary min-heap is a data structure which models an almost complete binary tree which has the heap property: For every node N with a parent P , the key of P is smaller than the key of N . The array-based implementation of a binary min-heap with n nodes is an array A[0..2m - 1] with two extra attributes: the capacity A.length = 2m - 1 and the size A.size = n, such that A.size ≤ A.length. The elements in the nodes of the binary min-heap are stored in the first n elements of A: the root is stored in A[0], and if N is the left (resp. right) child of a node P stored in A[i] then N is stored in A[2 · i + 1] (resp. A[2 · i + 2]). For 0 ≤ i, j < n we define the relation grandpa(i, j) if A[j] stores the parent of the parent of A[i]. The What is the runtime complexity of the deletion of the node with minimum key from a binary min-heap with n nodes?": {
     "O(log n)": true,
     "O(1)": false,
     "Θ(n log n)": false,

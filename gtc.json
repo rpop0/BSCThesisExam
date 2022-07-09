@@ -96,27 +96,27 @@
         "234": false
       },
       "16. Let G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. What is the number of simple undirected graphs with n nodes labeled from 1\nto n.": {
-        "2^{n(n−1)/2}": true,
+        "2^{n(n-1)/2}": true,
         "2^n": false,
         "n(n-1)/2": false,
         "n-1": false,
         "n(n-1)": false
       },
-      "17. Let Mn be the set of matrices of dimension n×n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. What is the number of simple undirected graphs with n nodes labeled from 1\nto n ?": {
-        "2^{n(n−1)/2}": true,
+      "17. Let Mn be the set of matrices of dimension n x n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. What is the number of simple undirected graphs with n nodes labeled from 1\nto n ?": {
+        "2^{n(n-1)/2}": true,
         "2^n": false,
         "n(n-1)/2": false,
         "n-1": false,
         "n · (n-1)": false
       },
-      "18. Let Mn be the set of matrices of dimension n×n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. Let In be the identity matrix of dimension n × n, and 1 ≤ p ≤ n. Consider\nthe following algorithm to compute the matrix B ∈ Mn: B = AG ⊕ In; for k := 1 to p do\nC = B ⊕ (B ⊙k B); B = C; What is the runtime complexity of this algorithm?": {
+      "18. Let Mn be the set of matrices of dimension n x n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. Let In be the identity matrix of dimension n x n, and 1 ≤ p ≤ n. Consider\nthe following algorithm to compute the matrix B ∈ Mn: B = AG ⊕ In; for k := 1 to p do\nC = B ⊕ (B ⊙k B); B = C; What is the runtime complexity of this algorithm?": {
         "Θ(p · n^2)": true,
         "Θ(p · n)": false,
         "Θ(p · n^3)": false,
         "Θ(n)": false,
         "Θ(p · 2^n)": false
       },
-      "19. Let Mn be the set of matrices of dimension n×n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. Let In be the identity matrix of dimension n × n, and 1 ≤ p ≤ n. Consider\nthe following algorithm to compute the matrix B ∈ Mn: B = AG ⊕ In; for k := 1 to p do\nC = B ⊕ (B ⊙k B); B = C; Which of the following assertions holds when B[i][j] = 1?": {
+      "19. Let Mn be the set of matrices of dimension n x n whose elements are 0 or 1. For every two matrices\nA,B ∈ Mn and 1 ≤ k ≤ n we define the operations A⊕B and A⊙kB as follows: A⊕B = C ∈ Mn if\nC[i][j] = max(A[i][j],B[i][j]) and A⊙kB = D ∈ Mn if D[i][j] = A[i][k]·B[k][j] for all 1 ≤ i, j ≤ n.\nLet G be a simple undirected graph with n nodes numbered from 1 to n, and AG ∈ Mn be its\nadjacency matrix. Let In be the identity matrix of dimension n x n, and 1 ≤ p ≤ n. Consider\nthe following algorithm to compute the matrix B ∈ Mn: B = AG ⊕ In; for k := 1 to p do\nC = B ⊕ (B ⊙k B); B = C; Which of the following assertions holds when B[i][j] = 1?": {
         "There is a path of length at most p + 1 from node i to node j.": true,
         "There is a path of length p from node i to node j.": false,
         "There is a path from node i to node j which goes through node p.": false,
