@@ -1,0 +1,67 @@
+{
+  "1. What data encapsulation refers to?": {
+    "Encapsulation of specific expertise into a class": false,
+    "Hiding access to the private state of an object": true,
+    "Making all the attributes of a class private": false,
+    "Including no methods in a class but only attributes": false,
+    "Hiding access to the entire state of an object": false
+  },
+  "2. Which of the following statements are false for the Java language?": {
+    "The multiple inheritance can be obtained by applying the simple inheritance by a number of times": true,
+    "The simple inheritance can be simply obtained implementing a single interface": true,
+    "Only the abstract class can benefit from multiple inheritance": true,
+    "The language has extended inheritance which can replace multiple inheritance": true
+  },
+  "3. Which statement from the ones below are true in relation with the Java language?": {
+    "The final keyword applies to classes, attributes and methods": true,
+    "A final method can only call other final methods in the same class": false,
+    "A final method in a class cannot be overriden in subclasses": true,
+    "A final attribute can be set only once": true,
+    "Final attributes can only exist in final classes": false
+  },
+  "4. Which of the following assertions hold in relation with the Java language?": {
+    "Inheritance can always be replaced by objects’ composition": false,
+    "A class can implement any number of interfaces": true,
+    "Using objects’ composition provide a possibility to avoid access restrictions": false,
+    "Object composition is also referred as objects aggregation.": false
+  },
+  "5. What is true about the String class in Java?": {
+    "The content of a String cannot be modified after creation": true,
+    "The == operator is used to compare the content of two String objects": false,
+    "The String class is final": true,
+    "The String class has an attribute called size providing the length of the string": false
+  },
+  "6. Which of the following statements is true about a Java abstract class: ": {
+    "A class which cannot be instantiated": true,
+    "A class having at least an abstract method": false,
+    "A class defined using the abstract keyword": true
+  },
+  "7. Which is the output of the following program?\npublic class MainClass {\nvoid method(int ... a){\nSystem.out.print(1 + \" \");\n}\nvoid method(int[] a){\nSystem.out.print(2+ \" \");\n}\npublic static void main(String args[]){\nMainClass a = new MainClass();\na.methods(new int[]{1,2,3,4});\n}\n}": {
+    "1": false,
+    "2": false,
+    "1 2": false,
+    "compilation error": true,
+    "execution error": false
+  },
+  "8. Which of the following statements are false about Collections and Collection?": {
+    "Collections is a special type of collection which holds a Set of collection": true,
+    "Both Collection and Collections entity belongs to java.util package": false,
+    "Collections is a utility class": false,
+    "Collection is an interface to Set and List": false,
+    "Collection instances do not use erasure when are instantiated": true
+  },
+  "9. Which of the following line of code is suitable to start a thread?: class X implements Runnable {\npublic void run() {\nSystem.out.println(“Thread is in Running state”);\n}\npublic static void main(String args[]) {\n/* Missing code? */\n}\n}": {
+    "X obj = new X();\nThread t=new Thread(obj);\nt.start();": true,
+    "X obj = new X();\nThread t=new Thread(X);": false,
+    "X x = new X();\nThread t=new Thread();\nx.run();": false,
+    "Thread t = new Thread(X());\nt.start();": false,
+    "None of these": false,
+    "Thread t = new Thread(new X());\nt.start();": true
+  },
+  "10. What is the result of the following statements?\nList list = new ArrayList();\nlist.add(\"one\");\nlist.add(\"two\");\nlist.add(7);\n6: for (String s: list)\n7: System.out.print(s);": {
+    "onetwo": false,
+    "onetwo followed by an exception": false,
+    "Compiler error on line 6": true,
+    "Compiler error on line 7": false
+  }
+}

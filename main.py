@@ -13,7 +13,6 @@ class Colors:
 
 
 class Test:
-
     letter_to_index = {
         'a': 0,
         'b': 1,
@@ -41,7 +40,7 @@ class Test:
             with open(self.file_path) as f:
                 f_str = f.read()
             return json.loads(f_str)
-        
+
         all_questions_dict = dict()
         current_path = Path(getcwd())
         files = current_path.glob('*.json')
@@ -51,7 +50,6 @@ class Test:
             file_json = json.loads(f_str)
             all_questions_dict = all_questions_dict | file_json
         return all_questions_dict
-        
 
 
 def print_correct_answers(questions, question, answers):
@@ -59,6 +57,7 @@ def print_correct_answers(questions, question, answers):
     for answer in answers:
         if questions[question][answer]:
             print(answer)
+
 
 def main():
     test_file = input('Input the file name of the test: ')
@@ -77,7 +76,7 @@ def main():
         total_correct_answers = 0
         user_correct_answers = 0
         user_wrong_answers = 0
-        
+
         shuffle(answers)
         # Zips through the answers and the letter_to_index keys to be able to assign a letter to the answers.
         for (answer, letter) in zip(answers, ti.letter_to_index.keys()):
@@ -94,17 +93,16 @@ def main():
                 user_wrong_answers += 1
             else:
                 user_correct_answers += 1
-                
-                
-                
+
         if user_wrong_answers == 0 and user_correct_answers == total_correct_answers:
             print(f"{Colors.GREEN}Correct!{Colors.END}")
         elif user_correct_answers != total_correct_answers and user_wrong_answers == 0:
-            print(f"{Colors.YELLOW}All your answers are correct, but there are more correct answers you did not choose. {Colors.END}")
+            print(
+                f"{Colors.YELLOW}All your answers are correct, but there are more correct answers you did not choose. {Colors.END}")
             print_correct_answers(ti.questions, question, answers)
         else:
             print_correct_answers(ti.questions, question, answers)
-        
+
         print("\n\n\n")
 
 
