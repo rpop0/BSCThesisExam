@@ -11,7 +11,7 @@
         " 3 4": true,
         "0 1 2 3": false
       },
-      "3.Which is the output of the following code?\nnames1 = [’Amir’, ’Barry’, ’Charles’, ’Dao’]\nnames2 = names1\nnames3 = names1[:]\nnames2[0] = ’Alice’\nnames3[1] = ’Bob’\nsum = 0\nfor ls in (names1, names2, names3): \n  if ls[0] == ’Alice’:\n    sum += 1\n  if ls[1] == ’Bob’:\n    sum += 10\n\nprint(sum)": {
+      "3.Which is the output of the following code?\nnames1 = ['Amir', 'Barry', 'Charles', 'Dao']\nnames2 = names1\nnames3 = names1[:]\nnames2[0] = 'Alice'\nnames3[1] = 'Bob'\nsum = 0\nfor ls in (names1, names2, names3): \n  if ls[0] == 'Alice':\n    sum += 1\n  if ls[1] == 'Bob':\n    sum += 10\n\nprint(sum)": {
         "11": false,
         "12": true,
         "21": false,

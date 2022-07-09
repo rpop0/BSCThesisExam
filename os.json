@@ -38,8 +38,8 @@
         "external memory fragmentation can be resolved by the operating system": true
       },
       "7. Assume you have a browser tab open in Windows, Linux or MacOS X, where you are playing an YouTube video in 4K (UltraHD) resolution. Which of the following could be true?": {
-        "the browser tab’s associated thread is more CPU-bound than I/O-bound": true,
-        "the browser tab’s associated thread is more I/O-bound than CPU-bound": true,
+        "the browser tab's associated thread is more CPU-bound than I/O-bound": true,
+        "the browser tab's associated thread is more I/O-bound than CPU-bound": true,
         "the operating system will not schedule any other processes until playback is complete": false,
         "new processes that are trying to execute during playback are placed in a FIFO waiting queue": false,
         "interrupts are not allowed during YouTube playback": false
@@ -56,7 +56,7 @@
         "if only 2 resources are available for an additional allocation, the entire system is in a deadlock": false,
         "an additional allocation of 1 resource to process A will leave the system in a deadlock": true
       },
-      "10. You are asked to design a process scheduling mechanism which favors short processes that perform I/O activities, while retaining the system’s interactive requirement, so that the user experience is satisfactory. Which of the following is true?": {
+      "10. You are asked to design a process scheduling mechanism which favors short processes that perform I/O activities, while retaining the system's interactive requirement, so that the user experience is satisfactory. Which of the following is true?": {
         "a preemptive scheduling mechanism is preferred for all interactive systems": true,
         "a non-preemptive scheduling mechanism is preferred in a situation such as the above": false,
         "starvation of high-burst processes is possible in certain scenarios": true,
@@ -66,14 +66,14 @@
         "An user-level process can voluntarily deny pre-emption, to disallow other processes to run.": false,
         "Page faults happen less often on systems with a high amount of external memory.": false,
         "It is required to protect critical regions for read accesses, in order to prevent data corruption.": false,
-        "Setting a thread’s priority to a lower level does not impose a guarantee of that thread’s stall\nin the next scheduler execution cycle.": true,
+        "Setting a thread's priority to a lower level does not impose a guarantee of that thread's stall\nin the next scheduler execution cycle.": true,
         "None of the above.": false
       },
       "12. A system with 1 CPU and 2 cores runs the following 2 threads: Thread 0: M = N-2 , Thread 1: N -= M/2 . If each instruction is atomic, which of the following are possible resulting values for the variables N and M, assuming that initially N = 1, M = 2?": {
-        "(N = 1.5, M = −1)": true,
-        "(N = 1.5, M = −1) or (N = 0.5, M = −1)": false,
-        "(N = 0, M = −1)": false,
-        "(N = 0, M = −2)": true,
+        "(N = 1.5, M = -1)": true,
+        "(N = 1.5, M = -1) or (N = 0.5, M = -1)": false,
+        "(N = 0, M = -1)": false,
+        "(N = 0, M = -2)": true,
         "none of the above": false
       },
       "13. Assuming you have a system with 1 CPU and 4 cores, and 7 running threads, which of the following statements is true in an interactive operating system:": {
