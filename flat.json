@@ -1,0 +1,96 @@
+{
+    "1. For the mobile application you are implementing, you have to store in the database only the\n Romanian phone numbers (e.g. +40724370012 / 0040724370012) and email addresses with a\n Romanian domain (e.g. ion@domeniu.ro; popescu.maria@dom.ro). The phone numbers must\n have exactly 9 digits after the Romanian prefix 0040/+40. The name of the domain and the\n extension of the email are written in lowercase letters and are case sensitive. Which of the\n following regular expressions express your needs:\n": {
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) |((a|...|z|A|...|Z)+@(a|...|z)∗.ro)": false,
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) | ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": true,
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": false,
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) | ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": false
+    },
+
+    "2. Assume you have to build push-down automaton simulating a natural language processor recognizing\n numerical palindromes of even length. Which of the following grammars G = (VN, VT , S, P)\n help you building the solution:\n":{
+        "VN = {S}, VT = {0, ..., 9}, S, P = {S → 0S0|1S1|...|9S9|λ}": true,
+        "VN = {S}, VT = {0, ..., 9}, S, P = {S → 0S0|1S1|...|9S9|0|...|9}": false,
+        "VN = {S}, VT = {0, ..., 9}, S, P = {S → 0S0|1S1|...|9S9|0|...|9|λ}": false
+    },
+
+    "3. Consider the set of all strings of balanced parentheses of two types: round and square. An\n  example of where these strings come from is as follows. If we take expressions in C, which use\n  round parentheses for grouping and for arguments of function calls, and use square brackets\n  for array indexes, and drop out everything but the parentheses, we get all strings of balanced\n  parentheses of these two types. For example, f(a[i] ∗ (b[i][j], c[g(x)]), d[i]) becomes the balanced\n  parentheses string ([]([][][()])[]). A grammar G = {VN, VT , S, P} for generating the strings of\n  round and squared parentheses that are balanced is:\n":{
+        "VN = {S}, VT = {(, ), [, ]}, S, P = {S → SS|[S]|(S)|()|[]}": true,
+        "VN = {S}, VT = {(, ), [, ]}, S, P = {S → (S)|[S]|()|[]|λ}": false,
+        "VN = {S}, VT = {(, ), [, ]}, S, P = {S → SS|(S)|[S]|λ}": false
+    },
+
+    "4. Are there sets of strings that cannot be described by any regular expression?\n": {
+        "Bitstrings with equal number of 0s and 1s.": true,
+        "Decimal strings that represent prime numbers.": true,
+        "DNA strings that are Watson-Crick complemented palindromes.": true
+    },
+
+    "5. In genomics, a nucleic acid is represented by one of the letters actg. A genome is a string of\n  nucleic acids. A Fragile X Syndrome pattern is a genome having an occurrence of gcg, followed by\n  any number of cgg or agg triplets, followed by ctg (The number of triplets correlates with Fragile\n  X Syndrome, a common cause of mental retardation.). Which of the following genomes contain a\n  Fragile X Syndrome?\n": {
+        "gcg(cgg|agg)∗ctg": true,
+        "gcg(cgg|agg)+ctg": true,
+        "gcg∗(cgg|agg)∗ctg∗": false,
+        "gcg(cgg|agg)∗ctge": false
+    },
+
+    "6. Which of the following strings the DFA accepts?\n https://prnt.sc/hM8CBwUkUCUG \n": {
+        "Bitstrings that end in 1.": false,
+        "Bitstrings with an equal number of occurrences of 01 and 10.": false,
+        "Bitstrings with more 1s than 0s.": false,
+        "Bitstrings with an equal number of occurrences of 0 and 1.": false,
+        "Bitstrings with at least one 1.": false,
+        "None.": true
+    },
+
+    "7. In computational biochemistry, an amino acid is represented by one of the characters GCAVLIMCRKHDENQSTYFWP.\n  A protein is a string of amino acids. A C2H2-type zinc finger domain\n  signature is:\n\n    • C followed by 2, 3, or 4 amino acids, followed by\n    • C followed by 3 amino acids, followed by\n    • L, I, V, M, F, Y, W, C, or X followed by 8 amino acids, followed by\n    • H followed by 3, 4, or 5 amino acids, followed by H.\n\n  Which of the following proteins is in the C2H2-type zinc finger domain?\n":{
+        "CAASCGGPYACGGWAGYHAGWH.": true,
+        "CAVLIMCRKHDENQSTYFWP.": false,
+        "CAASCGGPYACGGWAGYHGWH.": false
+    },
+
+    "8. In computational biochemistry, an amino acid is represented by one of the characters GCAVLIMCRKHDENQSTYFWP.\n  A protein is a string of amino acids. A C2H2-type zinc finger domain\n  signature is:\n\n    • C followed by 2, 3, or 4 amino acids, followed by\n    • C followed by 3 amino acids, followed by\n    • L, I, V, M, F, Y, W, C, or X followed by 8 amino acids, followed by\n    • H followed by 3, 4, or 5 amino acids, followed by H.\n\n  Which of the following Java code implements a Generalized Regular Expression Pattern (GREP)\n  matcher for the C2H2-type zinc finger domain signature?\n": {
+        "String re = \"C.{2,4}C...[LIVMFYWCX].{8}H.{3,5}H\";\n  String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n  boolean test = zincFinger.matches(re);": true,
+        "String re = \"C.{2,4}C...[^LIVMFYWCX].{8}H.{3,5}H\";\n  String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n  boolean test = zincFinger.matches(re);": false,
+        "String re = \"C.{2,4}C...{LIVMFYWCX}.{8}H.{3,5}H\";\n  String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n  boolean test = zincFinger.matches(re);": false
+    },
+
+    "9. Which of the following Java code implements a Generalized Regular Expression Pattern (GREP)\n  matcher for email addresses with the edu or com domains?\n":{
+        "String re = \"[a-z]*@([a-z]+\\.)+(edu|com)\";\n  String zincFinger = \"wayne@cs.princeton.edu\";\n  boolean test = zincFinger.matches(re);": false,
+        "String re = \"[a-z]+@([a-z]+\\.)+(edu|com)\";\n  String zincFinger = \"wayne@cs.princeton.edu\";\n  boolean test = zincFinger.matches(re);": true,
+        "String re = \"[^a-z]+@([a-z]+\\.)+(edu|com)\";\n  String zincFinger = \"wayne@cs.princeton.edu\";\n  boolean test = zincFinger.matches(re);": false
+    },
+
+    "10. Which of the following strings match the regular expression a∗bb(ab|ba)∗\n": {
+        "abb": true,
+        "aaba": false,
+        "abba": false,
+        "bbbaab": true,
+        "cbb": false,
+        "bbababbab": false
+    },
+
+    "11. Let L be the language generated by the grammar G = (VN, VT , S, P) where VN = {S, A,B,C,X, Y,Z},\n  VT = {a, b, c}, and P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ,\n  Z → λ | AX | BY, A → a,B → b,C → c}.\n  Is L a regular language?\n": {
+        "YES": true,
+        "NO": false
+    },
+
+    "12. Let L be the language generated by the grammar G = (VN, VT , S, P) where VN = {S, A,B,C,X, Y,Z},\n  VT = {a, b, c}, and P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ,\n  Z → λ | AX | BY, A → a,B → b,C → c}.\n How many strings of length 4 does L contain?\n": {
+        "16": false,
+        "24": true,
+        "32": false,
+        "81": false,
+        "243": false
+    },
+
+    "13. Let L be the language generated by the grammar G = (VN, VT , S, P) where VN = {S, A,B,C,X, Y,Z},\n  VT = {a, b, c}, and P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ,\n  Z → λ | AX | BY, A → a,B → b,C → c}.\n  Which of the following statements is true?\n": {
+        "L = {w ∈ V_T* | w does not contain consecutive identical letters}": false,
+        "L = {w ∈ V_T* | w contains identical consecutive letters}.": true,
+        "L = {w ∈ V_T* | w contains the substring abc }.": false,
+        "L = {λ}.": false
+    },
+
+    "14. Let L be the language generated by the grammar G = (VN, VT , S, P) where VN = {S, A,B,C,X, Y,Z},\n  VT = {a, b, c}, and P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ,\n  Z → λ | AX | BY, A → a,B → b,C → c}.\n  Let sn be the number of strings from L with length n. For every n > 1, the following recursive\n  relation holds:\n": {
+        "s_n = 2 · s_{n−1}": true,
+        "s_n = 3 · s_{n−1}": false,
+        "s_n = s_{n−1} + 2 · s_{n−2}": false,
+        "s_n = 3 s_{n−1} + s_{n−2}": false
+    }
+}
