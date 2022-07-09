@@ -45,7 +45,6 @@ class Test:
         all_questions_dict = dict()
         current_path = Path(getcwd())
         files = current_path.glob('*.json')
-        print(files)
         for f in files:
             with open(f) as f:
                 f_str = f.read()
