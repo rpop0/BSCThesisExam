@@ -1,0 +1,117 @@
+{
+    "1. By translation:\n": {
+        "a program P that was written for a high-level machine M is transformed by a translator into\na program P1 that can then be executed on a lower level of that machine, without further\nneed for P ": true,
+        "each instruction of a program P written for a high-level machine M is transformed into a\nsequence of instructions for a lower level of that machine, then immediately executed, before\nthe same process is applied to the next instruction from P": false,
+        "a program P that is written for a high-level virtual machine V M is transformed into a\nprogram P1 which can be executed on a physical machine M": true
+    },
+    "2. The data path is defined as:\n": {
+        "he connection between input-output devices and the processor": false,
+        "the representation of data types in the memory of a computing system": false,
+        "the connection, through buses, between registers, arithmetic-logical unit and back to registers, used for instruction execution": true,
+        "networks interconnecting computing systems (like the Internet)": false
+    },
+
+    "3. The program counter:\n": {
+        "is a global variable in a program that is used to count the number of instructions executed, and measure program complexity": false,
+        "is a register that holds an address to the next instruction that has to be executed": true,
+        "is a register that holds the instruction that is being executed in a processor": false,
+        "is an operating system variable that counts the number of processes in execution at a given time": false
+    },
+
+    "4. Microprogramming is: \n": {
+        "the activity of writing programs that run on microprocessors": false,
+        "the use of a set of instructions (microinstructions), stored in a memory, that are used to\ncontrol the data path, for the purpose of executing instructions in one or several data path\ncycles,": true,
+        "the interaction with input/output devices by issuing commands to controllers (e.g commands\nfor the hard drive controller to read a word from an address)": false,
+        "automated generation of small programs for embedded devices": false
+    },
+
+    "5. A kilobyte is: \n": {
+        "1000 bits": false,
+        "1024 bytes": true,
+        "2^13 bits": true
+    },
+
+    "6. A typical use for a demultiplexer circuit is the implementation of": {
+        "a 1 bit full adder circuit": false,
+        "a serial-to-parallel convertor:": true,
+        "a parallel-to-serial convertor": false,
+        "an integer multiplication circuit": false
+    },
+
+    "7. For cache memories, the locality principle refers to: \n": {
+        "the fact that memory locations close to the previously used one are likely to be used in the near future": true,
+        "the fact that memory locations that were accessed recently will likely be accessed again": true,
+        "the position of cache levels with respect to the processor (on processor, or very near the processor)": false
+    },
+
+    "8. Which type of branch instruction causes most delay in a typical five stage pipeline: \n": {
+        "unconditional branches": false,
+        "conditional branches": true,
+        "none of the branch prediction causes any delay in the pipeline": false,
+        "both types of branch prediction cause the same amount of delay, on average": false
+    },
+
+    "9. Which of the following are necessary to describe the Instruction Set Architecture level: \n": {
+        "the memory model": true,
+        "the configuration of the cache": false,
+        "the configuration of registers": true,
+        "data types": true,
+        "instructions": true
+    },
+
+    "10. The result of the following addition\n11110111+\n11110111\nin 2’s complement representation on 8 bits is: \n": {
+        "11101110 and the result is correct": true,
+        "11101110 but there is an overflow": false,
+        "11101111 and the result is correct": false,
+        "11101111 but there is an overflow": false
+
+    },
+
+    "11. The sequence 3D800000 represents the following number in IEEE 754 single precision floating point representation: \n": {
+        "0.0625": true,
+        "16.25": false,
+        "41": false,
+        "221": false
+    },
+
+    "12. [In general] the Instruction Sets are growing larger and larger over time. Why is that?: \n": {
+        "because Moore’s law dictates that we double the amount of computation every 2 years": false,
+        "because the RAM (and memory in general) is growing larger and larger each year": false,
+        "because with each new generation of CPU’s more instructions are added; thus growing the list;": false,
+        "because there is an increase in the number of users and the applications that they use": false,
+        "because old OPT codes must be kept for backwards compatibility": true
+    },
+
+    "13. In the Cache, the role of the Dirty bit is to: \n": {
+        "signal that the data in the cache is old": false,
+        "There is no such thing as a 'dirty bit'": false,
+        "signal that the cache line might contain a different value than the corresponding memory location in RAM": true,
+        "keep track if there was a Cache Hit or Cache Miss in the previous instruction": false,
+        "None of the above": false
+    },
+
+    "14. Select the correct statements in regard to the Central Processing Unit: \n": {
+        "Its role is to execute instructions": true,
+        "it contains multiple registers": true,
+        "Each computer has one CPU in it": false,
+        "Uses multiple phases to process each instruction": true,
+        "It controls how the data is written into the RAM memory": false
+    },
+
+    "15. Upon completing the Execute Phase the Control Unit... \n": {
+        "transfers control to the memory to store the result of the execution": false,
+        "increments the instruction address": true,
+        "checks if the next memory address contains and instruction or data": false,
+        "clears all registers to prepare the CPU for the next instruction": false,
+        "none of the above": false
+    },
+
+    "16. What is the role of the Clock inside a computer? \n": {
+        "It is just unit of measure that helps rank the CPUs by speed": false,
+        "Its signal is used by the Control Unit to advance the internal operation of the CPU": true,
+        "Its main role is to allow overclocking and/or underclocking of CPUs": false,
+        "Keeps track not only of time but also the date and other useful timing variables": false,
+        "Triggers an electrical signal at a precise and regular interval.": true
+    }
+
+}
