@@ -98,7 +98,6 @@
         "GetBooksList can be a persistent object": false,
         "DisplayLinks is an object for interfacing with the system": false,
         "GetBooksList could be implemented as a method of an entity class": true,
-        "GetBooksList can be a persistent object.": false,
         "BooksList is an object for interfacing with the system.": false,
         "Catalog is an entity object.": true
     },

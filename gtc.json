@@ -12,7 +12,7 @@
         "89": true,
         "144": false
       },
-      "3. In how many ways can be colored the following configuration by using 2 colors: red and black?": {
+      "3. In how many ways can be colored the following configuration by using 2 colors: red and black? https://prnt.sc/p4osnfU47_DK": {
         "64": false,
         "48": true,
         "128": false,
@@ -57,20 +57,20 @@
         "120": false,
         "125": true
       },
-      "10. In how many ways can we color the following graph G with three colors?": {
+      "10. In how many ways can we color the following graph G with three colors? https://prnt.sc/uGza6VusGY_z": {
         "0": false,
         "288": true,
         "336": false,
         "1874": false
       },
-      "11. Which of the following graphs are eulerian graphs and which ones are not?": {
+      "11. Which of the following graphs are eulerian graphs and which ones are not? https://prnt.sc/_xYHfmnxMHea": {
         "G1 : no, G2,G3 : yes": true,
         "G1 : yes, G2,G3 : no": false,
         "G1,G2 : yes, G3 : no": false,
         "none": false,
         "all of them are eulerian": false
       },
-      "12. There are 3 types of Internet addresses:\n(a) Class A: these are of the form 0 b|1b2b3{bz4 . . . b}7\nnetid\nb|8b9 . .{.zb30b3}1\nhostid\n(b) Class B: these are of the form 10 b|2b3b4{z. . . b1}5\nnetid\nb|16b17 .{.z. b30b3}1\nhostid\n(c) Class C: these are of the form 110 b|3b4b5{z. . . b2}3\nnetid\nb|24b25 .{.z. b30b3}1\nhostid\nHow many different IPv4 addresses are available for the internet network connections?": {
+      "12. There are 3 types of Internet addresses:\n(a) Class A: these are of the form 0b1b2b3b4...b7b8b9...b30b31\n(b) Class B: these are of the form 10b2b3b4...b15b16b17...b30b31\n(c) Class C: these are of the form 110b3b4b5...b23b24b25...b30b31 How many different IPv4 addresses are available for the internet network connections?": {
         "2^29": false,
         "2^30 * 2^31": false,
         "2^31": false,
