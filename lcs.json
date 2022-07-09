@@ -1,0 +1,99 @@
+{
+    "1. Consider the predicate logic language that contains the following symbols: \n• variables, indicated with lower case letters\n• function symbols F: + binary infix, − unary prefix, ∗ binary infix\n• predicate symbols P: =,<, ≤ all binary, infix.\n• constant symbols C: 0, 1\nWhich of the following are terms over this language?\n": {
+        "(0 ∗ x) − 1": false,
+        "1 + (z ∗ x) < 0": false,
+        "x + ((−1) ∗ 0)": true,
+        "0 ∗ (y + 1)": true
+    },
+
+    "2. For the following propositional formulae, and for the truth valuation {P, ¬Q} \n": {
+        "((P ⇒ Q) ∧ ((¬Q) ∧ P )) evaluates to T": false,
+        "((P ⇒ Q) ⇒ (Q ⇒ P ) evaluates to T": true,
+        "((¬(P ∨ Q)) ∧ (¬Q)) evaluates to F": true
+    },
+
+    "3. Which of the following statements are true: \n": {
+        "if a propositional formula is valid then it is satisfiable": true,
+        "if a propositional formula is not valid then it is satisfiable": false,
+        "if a propositional formula is not valid then its negation is satisfiable": true,
+        "if a propositional formula is not valid, then its negation is valid": false
+    },
+
+    "4. What is the relation between propositions\n\t(F ∧ G) ⇒ H\nand\n\tF ⇒ (G ⇒ H)\n": {
+        "they are logically equivalent": true,
+        "the first one is a logical consequence of the second one": true,
+        "the second one is a logical consequence of the first one": true,
+        "they are not related in any of the ways above": false
+    },
+
+    "5. The formula:\n\tP ⇔ Q\nis a ______ of\nthe formulas\n\tQ ⇒ R\n\tR ⇒ (P ∧ Q)\n\tP ⇒ (Q ∨ R)\n": {
+        "logically equivalent to the conjunction of": false,
+        "a logical consequence of": true,
+        "logically equivalent to the disjunction of": false
+    },
+
+    "6. Which of the following formulae are in Disjunctive Normal Form?\n": {
+        "P": true,
+        "¬P ∨ Q": true,
+        "P ∧ ¬Q ∧ S": true,
+        "(P ∧ ¬Q ∧ S) ∨ ¬S": true
+    },
+
+    "7. What is a resolvent of clauses {P, ¬Q, R} and {¬P, Q, S}?\n": {
+       "∅": false,
+       "{P, ¬P, R, S},": true,
+       "{R, S}": false 
+    },
+
+    "8. To establish whether a formula G is a logical consequence of formulae F1, . . . , Fn,\n which of the following methods can be applied: \n": {
+        "check that (F1 ∧ . . . ∧ Fn) ⇒ G is unsatisfiable": false,
+        "check that ¬F1 ∨ . . . ∨ ¬Fn ∨ G is unsatisfiable":  false,
+        "check that ¬F1 ∨ . . . ∨ ¬Fn ∨ G is valid": true,
+        "check that F1 ∧ . . . ∧ Fn ∧ ¬G is unsatisfiable": true
+    },
+
+    "9. There is a formula which is logically equivalent to https://i.imgur.com/lw9gJII.png\nwhich contains only propositional connectives taken from below,\n where | is the NAND connective (i.e. P |Q = ¬(P ∧ Q): \n": {
+        "{¬, ∨}": true,
+        "{∨, ∧}": false,
+        "{|}": true,
+        "{⊥, ⇒}": true
+    },
+
+    "10. The clause set corresponding to the formula\n\t(¬P ⇒ (Q ∧ R)) ⇒ (P ⇒ ¬Q)\nis:\n": {
+        "{{¬P, ¬Q}}": true,
+        "{{P, ¬Q}, {P, R}, {¬Q, R}}": false,
+        "{{P, ¬Q, ¬R}, {P, Q, R}, {¬P, ¬Q, R}}": false
+    },
+    
+    "11. Consider the clause set containing the following clauses:\n\t(1) {P, Q, ¬R},\n\t(2) {¬P, R},\n\t(3) {P, ¬Q, S},\n\t(4) {¬P, ¬Q, ¬R},\n\t(5) {P, ¬S}.\nThe formula corresponding to this clause set is:\n": {
+        "valid": false,
+        "satisfiable": true,
+        "unsatisfiable": false
+    },
+
+    "12. The Davis-Putnam method returns the answer satisfiable:\n": {
+        "when the empty clause is generated": false,
+        "when the empty clause set is generated": true,
+        "when no new clauses can be generated, and the empty clause is not in the clause set": true
+    },
+
+    "13. To prove a goal G when a disjunction A ∨ B is known:\n": {
+        "assume A and prove G then assume B and prove G": true,
+        "assume A and prove G": false,
+        "assume ¬A and prove B and G": false
+    },
+
+    "14. Let P, Q, R be propositional variables. Which of the following propositional formulas correspond\nto the boolean function with 3 arguments that returns T when its inputs represent the binary\nencoding of a prime number: \n": {
+        "P ∧ Q ∧ ¬R": false,
+        "(¬P ∧ Q) ∨ (P ∧ R)": true,
+        "(¬P ∧ Q ∧ ¬R) ∨ (((¬P ∧ Q) ∨ P ) ∧ R)": true,
+        "((¬P ∧ Q) ∨ (P ∧ ¬Q) ∨ (P ∧ Q))": false
+    },
+
+    "15. Consider the clause set\n\t{{¬P, ¬Q, R}, {P, ¬Q, ¬R}, {¬P, R}, {P, ¬Q, R}, {¬Q, ¬R}}\nThe first step in running the Davis Putnam method is:\n": {
+        "applying the splitting rule (using the literal ¬P )": false,
+        "applying the pure literal rule (where the pure literal is ¬Q)": true,
+        "applying the resolution rule": false,
+        "applying the one literal rule (using the last clause)": false
+    }
+}
