@@ -86,7 +86,7 @@ def main():
             print(f"    {letter}.{answer}")
             if ti.questions[question][answer]:
                 total_correct_answers += 1
-        input_values = input("Answers: ")
+        input_values = input("\nAnswers: ")
 
         # Loops through the values inputted by the user, maps it to the answer's index and checks if it is wrong.
         for val in input_values:
