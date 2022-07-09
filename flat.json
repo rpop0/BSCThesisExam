@@ -1,9 +1,9 @@
 {
     "1. For the mobile application you are implementing, you have to store in the database only the\n Romanian phone numbers (e.g. +40724370012 / 0040724370012) and email addresses with a\n Romanian domain (e.g. ion@domeniu.ro; popescu.maria@dom.ro). The phone numbers must\n have exactly 9 digits after the Romanian prefix 0040/+40. The name of the domain and the\n extension of the email are written in lowercase letters and are case sensitive. Which of the\n following regular expressions express your needs:\n": {
-        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) |((a|...|z|A|...|Z)+@(a|...|z)∗.ro)": false,
-        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) | ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": true,
-        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": false,
-        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n  ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) | ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": false
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n      ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) |((a|...|z|A|...|Z)+@(a|...|z)∗.ro)": false,
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n      ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) | ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": true,
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n      ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": false,
+        "(+407|00407)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9)(0|...|9);\n      ((a|...|z|A|...|Z)+.(a|...|z|A|...|Z)+@(a|...|z)+.ro) | ((a|...|z|A|...|Z)+@(a|...|z)+.ro)": false
     },
 
     "2. Assume you have to build push-down automaton simulating a natural language processor recognizing\n numerical palindromes of even length. Which of the following grammars G = (VN, VT , S, P)\n help you building the solution:\n":{
@@ -47,15 +47,15 @@
     },
 
     "8. In computational biochemistry, an amino acid is represented by one of the characters GCAVLIMCRKHDENQSTYFWP.\n  A protein is a string of amino acids. A C2H2-type zinc finger domain\n  signature is:\n\n    • C followed by 2, 3, or 4 amino acids, followed by\n    • C followed by 3 amino acids, followed by\n    • L, I, V, M, F, Y, W, C, or X followed by 8 amino acids, followed by\n    • H followed by 3, 4, or 5 amino acids, followed by H.\n\n  Which of the following Java code implements a Generalized Regular Expression Pattern (GREP)\n  matcher for the C2H2-type zinc finger domain signature?\n": {
-        "String re = \"C.{2,4}C...[LIVMFYWCX].{8}H.{3,5}H\";\n  String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n  boolean test = zincFinger.matches(re);": true,
-        "String re = \"C.{2,4}C...[^LIVMFYWCX].{8}H.{3,5}H\";\n  String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n  boolean test = zincFinger.matches(re);": false,
-        "String re = \"C.{2,4}C...{LIVMFYWCX}.{8}H.{3,5}H\";\n  String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n  boolean test = zincFinger.matches(re);": false
+        "String re = \"C.{2,4}C...[LIVMFYWCX].{8}H.{3,5}H\";\n      String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n      boolean test = zincFinger.matches(re);": true,
+        "String re = \"C.{2,4}C...[^LIVMFYWCX].{8}H.{3,5}H\";\n      String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n      boolean test = zincFinger.matches(re);": false,
+        "String re = \"C.{2,4}C...{LIVMFYWCX}.{8}H.{3,5}H\";\n      String zincFinger = \"CAASCGGPYACGGAAGYHAGAH\";\n      boolean test = zincFinger.matches(re);": false
     },
 
     "9. Which of the following Java code implements a Generalized Regular Expression Pattern (GREP)\n  matcher for email addresses with the edu or com domains?\n":{
-        "String re = \"[a-z]*@([a-z]+\\.)+(edu|com)\";\n  String zincFinger = \"wayne@cs.princeton.edu\";\n  boolean test = zincFinger.matches(re);": false,
-        "String re = \"[a-z]+@([a-z]+\\.)+(edu|com)\";\n  String zincFinger = \"wayne@cs.princeton.edu\";\n  boolean test = zincFinger.matches(re);": true,
-        "String re = \"[^a-z]+@([a-z]+\\.)+(edu|com)\";\n  String zincFinger = \"wayne@cs.princeton.edu\";\n  boolean test = zincFinger.matches(re);": false
+        "String re = \"[a-z]*@([a-z]+\\.)+(edu|com)\";\n      String zincFinger = \"wayne@cs.princeton.edu\";\n      boolean test = zincFinger.matches(re);": false,
+        "String re = \"[a-z]+@([a-z]+\\.)+(edu|com)\";\n      String zincFinger = \"wayne@cs.princeton.edu\";\n      boolean test = zincFinger.matches(re);": true,
+        "String re = \"[^a-z]+@([a-z]+\\.)+(edu|com)\";\n      String zincFinger = \"wayne@cs.princeton.edu\";\n      boolean test = zincFinger.matches(re);": false
     },
 
     "10. Which of the following strings match the regular expression a∗bb(ab|ba)∗\n": {
