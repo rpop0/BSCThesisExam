@@ -62,6 +62,9 @@ def print_correct_answers(questions, question, answers):
 
 def main():
     test_file = input('Input the file name of the test: ')
+
+    test_file = f"{test_file}.json" if '.json' not in test_file and test_file != 'all' else test_file
+
     if test_file != "all" and not path.exists(test_file):
         print(f"{Colors.RED}File '{test_file}' was not found.{Colors.END}")
         sys.exit(1)

@@ -1,4 +1,4 @@
-# BSC Exam test giver
+# BSC Exam Tester
 Prerequisites:
 - Python 3.9
 - A terminal capable of showing colors and unicode characters (Git Bash, WSL)
