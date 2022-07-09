@@ -32,10 +32,10 @@
     },
 
     "5. Three of the following four expressions find the names of all students who did not apply to major in CS or PH. \n Which one finds something different? (Hint: You should not assume that the student names are unique.)\n": {
-        "πsName(Student ▷◁ \n  (πsID(Student) - (πsID(σmajor='CS'Apply) ∪ πsID(σmajor='PH'Apply))))": false,
-        "πsName(Student ▷◁ \n  (πsIDStudent - πsID(σmajor='CS' v major='PH'Apply)))": false,
-        "πsName(πsID,sNameStudent - \n  πsID,sName(Student ▷◁ πsID(σmajor='CS' v major='PH'Apply)))": false,
-        "πsNameStudent - \n  πsName(Student ▷◁ πsID(σmajor='CS' v major='PH'Apply))": true
+        "πsName(Student >< \n  (πsID(Student) - (πsID(σmajor='CS'Apply) U πsID(σmajor='PH'Apply))))": false,
+        "πsName(Student >< \n  (πsIDStudent - πsID(σmajor='CS' v major='PH'Apply)))": false,
+        "πsName(πsID,sNameStudent - \n  πsID,sName(Student >< πsID(σmajor='CS' v major='PH'Apply)))": false,
+        "πsNameStudent - \n  πsName(Student >< πsID(σmajor='CS' v major='PH'Apply))": true
     },
 
     "6. Consider the following query:\n\n  SELECT * FROM Student, Apply, College\n  WHERE Student.sID = Apply.sID\n  AND Apply.cName = College.cName\n  AND Student.Bac > 6\n  AND College.cName = 'UVT'\n\n Suppose we can create two indexes, and assume all indexes are tree-based. Which two indexes do you think would be most useful for speeding up query execution?\n": {
@@ -53,10 +53,10 @@
     },
 
     "8. The table https://prnt.sc/Ih4ezVOx4XOZ contains a representative data sample for all the functional dependencies in a real-life data set.\n Which are the functional dependencies that hold for the data below?\n": {
-        "A → {B, C}, E → {F}": true,
-        "D → {A, B, C, E, F}, F → {E}": false,
-        "{A, E} → {D}": true,
-        "{D, E} → {A, B}": false
+        "A -> {B, C}, E -> {F}": true,
+        "D -> {A, B, C, E, F}, F -> {E}": false,
+        "{A, E} -> {D}": true,
+        "{D, E} -> {A, B}": false
     },
 
     "9. Considering the relation R(A,B,C,D,E,F) with attributes and functional dependencies from the previous question https://prnt.sc/8YzgSS3eFpKq , which of the following sets of attributes is/are candidate keys in R?\n": {
@@ -73,7 +73,7 @@
         "The relation R can not contain two tuples with different values in column D when the values in column A match.": true
     },
 
-    "11. Consider the relation R(A,B,C,D,E) with the following functional dependencies: D → C, {C,E} → A,D → A, {B,E} → D. Which of the following attribute sets is a superkey of R?\n": {
+    "11. Consider the relation R(A,B,C,D,E) with the following functional dependencies:\n\n  D -> C, {C,E} -> A,D -> A, {B,E} -> D. \n  Which of the following attribute sets is a superkey of R?\n": {
         "{B, E}": true,
         "{C, D}": false,
         "{A, C}": false,
@@ -89,7 +89,7 @@
         "Enroll(SID, CID, grade)": true
     },
 
-    "13. The relations R(A,B) and S(B,C) contain the following records: R=(1,2), (2,2), (5,1) and S=(2,2), (2, 1). Let the view V be defined by the following statement\n\n  SELECT A, C FROM R JOIN S ON R.B = S.B \n  Which of the following records are included in V?\n": {
+    "13. The relations R(A,B) and S(B,C) contain the following records:\n  R=(1,2), (2,2), (5,1) and S=(2,2), (2, 1).\n  Let the view V be defined by the following statement\n\n  SELECT A, C FROM R JOIN S ON R.B = S.B \n  Which of the following records are included in V?\n": {
         "(1,1)": true,
         "(1,2)": true,
         "(2,1)": true,
