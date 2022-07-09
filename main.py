@@ -100,7 +100,7 @@ def main():
                 
         if user_wrong_answers == 0 and user_correct_answers == total_correct_answers:
             print(f"{Colors.GREEN}Correct!{Colors.END}")
-        elif user_correct_answers != correct_answers and user_wrong_answers == 0:
+        elif user_correct_answers != total_correct_answers and user_wrong_answers == 0:
             print(f"{Colors.YELLOW}All your answers are correct, but there are more correct answers you did not choose. {Colors.END}")
             print_correct_answers(ti.questions, question, answers)
         else:
