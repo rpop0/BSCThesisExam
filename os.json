@@ -60,13 +60,13 @@
         "a preemptive scheduling mechanism is preferred for all interactive systems": true,
         "a non-preemptive scheduling mechanism is preferred in a situation such as the above": false,
         "starvation of high-burst processes is possible in certain scenarios": true,
-        "statistically, processes offer the best response times when using the optimum quantum value,\ninstead of higher quantum values": true
+        "statistically, processes offer the best response times when using the optimum quantum value, instead of higher quantum values": true
       },
       "11. On an interactive operating system, which of the following statements are true:": {
         "An user-level process can voluntarily deny pre-emption, to disallow other processes to run.": false,
         "Page faults happen less often on systems with a high amount of external memory.": false,
         "It is required to protect critical regions for read accesses, in order to prevent data corruption.": false,
-        "Setting a thread's priority to a lower level does not impose a guarantee of that thread's stall\nin the next scheduler execution cycle.": true,
+        "Setting a thread's priority to a lower level does not impose a guarantee of that thread's stall in the next scheduler execution cycle.": true,
         "None of the above.": false
       },
       "12. A system with 1 CPU and 2 cores runs the following 2 threads: Thread 0: M = N-2 , Thread 1: N -= M/2 . If each instruction is atomic, which of the following are possible resulting values for the variables N and M, assuming that initially N = 1, M = 2?": {
@@ -94,7 +94,7 @@
         "To ensure videos will play back smoothly, you should consider scheduling computationally intensive processes with higher priority as opposed to I/O-bound processes.": true,
         "To ensure network buffering happens fast enough, you should consider scheduling I/O-bound processes with higher priority as opposed to CPU-bound processes.": true,
         "If the CPU is too slow to render the video smoothly, your OS must focus heavily on I/O to improve playback.": false,
-        "If the CPU is capable of rendering the video at 60fps smoothly, your OS no longer needs to\ndo any type of I/O at all.": false,
+        "If the CPU is capable of rendering the video at 60fps smoothly, your OS no longer needs to do any type of I/O at all.": false,
         "None of the above.": false
       }
 }
