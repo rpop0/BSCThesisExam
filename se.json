@@ -67,11 +67,11 @@
     },
 
     "9. Consider the following class diagram. https://i.imgur.com/TqGdAEh.png\nWhich sequence of Java code correctly describes the relationship between classes Student and Project?\n": {
-        "class Student extends Project{...}\n\nclass Project{...}": false,
-        "class Project extends Student{...}\n\nclass Student{...}": false,
-        "class Project {\n  private Collection <Student> ...}\n\nclass Student{...}": true,
-        "class Project {\n  private Collection <Student> ...}\n\nclass Student {\n  private Project project; ...}": false,
-        "class Project {\n  private Collection <Student> ...}\n\nclass Student {\n  private Collection<Project> projects; ...}": false
+        "\nclass Student extends Project{...}\n\nclass Project{...}\n": false,
+        "\nclass Project extends Student{...}\n\nclass Student{...}\n": false,
+        "\nclass Project {\n  private Collection <Student> ...}\n\nclass Student{...}\n": true,
+        "\nclass Project {\n  private Collection <Student> ...}\n\nclass Student {\n  private Project project; ...}\n": false,
+        "\nclass Project {\n  private Collection <Student> ...}\n\nclass Student {\n  private Collection<Project> projects; ...}\n": false
     },
 
     "10. Consider the following sequence diagram. https://i.imgur.com/1cXn1U8.png\nWhich operations of class RegistrationControler result from it?\n": {
