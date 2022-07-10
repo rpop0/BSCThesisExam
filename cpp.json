@@ -1,0 +1,133 @@
+{
+    "1. A C++ constructor has the following properties: \n": {
+        "It is a member function in a class with the name matching the class name": true,
+        "It is a member function that may return a value": false,
+        "It is a member function without a return value": true,
+        "It is a member function whose role is to initialise the instances of the class": true,
+        "It is a member function whose role is to release allocated memory": false,
+        "A given class cannot have more than one constructor": false
+    },
+
+    "2. Which of the following statements are true about templates? \n": {
+        "Template is a feature of C++ that allows us to write one code for different data types": true,
+        "Template is an example of compile time polymorphism": true,
+        "Templates can not be used for user-defined data types.": false,
+        "It is not possible to have user-defined templates, it is only possible to use those already created.": false
+    },
+
+    "3. Which of the following statements is true (in a C++ context)? \n": {
+        "A static function cannot throw an exception.": false,
+        "A static function cannot access a non-static member of the class.": true,
+        "A static function cannot access a static member of the class.": false,
+        "A static member cannot be modified in const non-static member functions.": false
+    },
+
+    "4. Exceptions are: \n": {
+        "errors that appears when a program is compiled": false,
+        "special situations in programs resolved with the help of tests of type if(variable == NULL)": false,
+        "errors that appear at runtime": true,
+        "thrown using the try statement and resolved using the catch statement": false,
+        "thrown using the throw statement and resolved using the try and catch statements": true
+    },
+
+    "5. Match the verb with the class relationship it describes https://i.imgur.com/FcTdC0h.png: \n": {
+        "(1, a), (2, b), (3, c)": false,
+        "(1, b), (2, c), (3, a)": true,
+        "(1, c), (2, b), (3, a)": false,
+        "1, b), (2, a), (3, c)": false
+    },
+
+    "6. The OCP principle refers to: \n": {
+        "responsibilities that a class must implement": false,
+        "defining a consistent class hierarchy": false,
+        "problems that appear because of duplicate code": false,
+        "the possibility of class extension and avoidance of the modification of existing classes / code": true
+    },
+
+    "7. Which of the following statements are false with respect to operator overloading in C++: \n": {
+        "It is possible to add new operators to the language": true,
+        "It is possible to change the arity of the operator (number of accepted operands)": true,
+        "There are operators that cannot be overloaded": false,
+        "One can use either a member function or a global function to implement an operator overload.": false
+    },
+
+    "8. If a class X has pointer variable members, then the class should also contain: \n": {
+        "an empty destructor X(){}": false,
+        "a fiend function that copies an object of class X": false,
+        "an overload of the assignment operator": true,
+        "a copy constructor": true,
+        "an overload of the == operator": false,
+        "a destructor that releases the memory pointed by the members of type pointer": true
+    },
+
+    "9. Given the following code:\nclass Date {\n  public:\n    Date(int day=0, int month=0, int year=0);\n    Date(const Date& ref);\n};\n\nvoid g(Date d) { }\nvoid f() {\n  Date d{7 , 3, 2007};\n  Date d1;\n  Date d2 = d;\n  d2 = d;\n  g(d);\n}\nHow many times the constructors of class Date are invoked? \n": {
+        "2": false,
+        "3": false,
+        "4": true,
+        "5": false
+    },
+
+    "10. Which of the following statements is true?\n class Shape { virtual void draw() = 0; };\nstruct Curve : Shape {\n  void addControlPoint(int x, int y);\n};\n\nint main() { Curve c; return 0; } \n": {
+        "class Curve cannot be instantiated because of the method addControlPoint that is not implementatied": false,
+        "class Curve cannot be instantiated because it is an abstract class": true,
+        "the code compiles successfully.": false
+    },
+
+    "11. Which of the following code snippets is the correct implementation of the static function MyClass* instance() declared in class MyClass?\n": {
+        "static MyClass* MyClass::instance() return new MyClass;": false,
+        "MyClass* instance() return new MyClass;": false,
+        "MyClass MyClass::instance() return new MyClass;": false,
+        "MyClass* MyClass::instance() return new MyClass;": true,
+        "MyClass::MyClass* instance() return new MyClass;": false
+    },
+
+    "12. What is the minimal implementation of class INT so that the declarations INT i{10}, ii{i}; are correct.\n": {
+        "struct INT { INT(int x); };": false, 
+        "struct INT { INT(int x) {}; };": true,
+        "struct INT { INT(int x) {} INT(const IN& r) {} };": false,
+        "struct INT { INT(int x); INT(const IN& r); };": false
+    },
+
+    "13. Which condition needs to be be satisfied so that the code below compiles and the execution of\n function min returns the minimum value of the arguments?\ntemplate <class T> min(T x, T y) {\n  return x < y ? x : y;\n}\n": {
+        "?: operator needs to be overloaded for type T": false,
+        "< operator needs to be overloaded for type T": true,
+        "T need to be a numeric type": false
+    },
+
+    "14. Running the C++ code below will print\n#include <iostream>\n\nstruct C\n{\n  C()\n  {\n    std::cout << \"Red \";\n  }\n};\nClass B\n{\n  protected:\n  B()\n  {\n    std::cout << \"Vehicle \";\n  \n};\n\nstruct A:B\n{\n  C c;\n\n  A()\n{\n     std::cout << \"Car \";\n  }\n};\n\nint main(){\n  A a;\n}\n": {
+        "Red Vehicle Car": false,
+        "Red Car Vehicle": false,
+        "Car Vehicle Red": false,
+        "Car Red Vehicle": false,
+        "Vehicle Red Car": true,
+        "Vehicle Car Red": false
+    },
+
+    "15. Which C++ keyword is used to create a custom error object when a problem is detected at runtime?\n": {
+        "try": false,
+        "catch": false,
+        "throw": true,
+        "return": false
+    },
+
+    "16. Assuming that the exception class Overflow is derived from MathException, in the try block below, when\nan Overflow exception is thrown, then the code will print ...\ntry {\n  // calling math operations that may throw exceptions\n}\ncatch(MathException me) {\n  std::cerr << \"MathException \";\n}\ncatch(Overflow o) {\n  std::cerr << \"Overflow \";\n}\n": {
+        "Overflow": false,
+        "Overflow MathException": false,
+        "MathException": true,
+        "MathException Overflow": false,
+        "None": false
+    },
+
+    "17. Fill in the space below the message that reflects the result\nvoid f(list<string>& lst) {\n  list<string>::const_iterator x = find(lst.begin(), lst.end(), \"Timisoara\");\n\n  if (x==lst.end()) std::cout << \"_______________________\";\n}\n": {
+        "Found Timisoara": false,
+        "Did not find Timisoara": true,
+        "Timisoara is the last element in the list": false,
+        "Timisoara is the first element in the list": false
+    },
+
+    "18. Which members of a base class are accessible in member functions of derived classes?": {
+        "private": false,
+        "protected": true,
+        "public": true
+    }
+}
