@@ -66,7 +66,7 @@
         "{A}": false
     },
 
-    "10. Given R defined in the previous question, which of the below statements are false?\n": {
+    "10. Given R defined in the previous question, which of the below statements are false? https://prnt.sc/zwD3nIpf16ya \n": {
         "The relation R is in the first normal form.": false,
         "The relation R is in the second normal form.": true,
         "In the relation R the values in column B determines the values in column A.": true,
