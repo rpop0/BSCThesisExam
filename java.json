@@ -36,7 +36,7 @@
     "A class having at least an abstract method": false,
     "A class defined using the abstract keyword": true
   },
-  "7. Which is the output of the following program?\npublic class MainClass {\nvoid method(int ... a){\nSystem.out.print(1 + \" \");\n}\nvoid method(int[] a){\nSystem.out.print(2+ \" \");\n}\npublic static void main(String args[]){\nMainClass a = new MainClass();\na.methods(new int[]{1,2,3,4});\n}\n}": {
+  "7. Which is the output of the following program?\npublic class MainClass {\n  void method(int ... a){\n    System.out.print(1 + \" \");\n  }\n  void method(int[] a){\n    System.out.print(2+ \" \");\n  }\n  public static void main(String args[]){\n    MainClass a = new MainClass();\n    a.methods(new int[]{1,2,3,4});\n    }\n  }": {
     "1": false,
     "2": false,
     "1 2": false,
@@ -51,12 +51,12 @@
     "Collection instances do not use erasure when are instantiated": true
   },
   "9. Which of the following line of code is suitable to start a thread?: class X implements Runnable {\npublic void run() {\nSystem.out.println(“Thread is in Running state”);\n}\npublic static void main(String args[]) {\n/* Missing code? */\n}\n}": {
-    "X obj = new X();\nThread t=new Thread(obj);\nt.start();": true,
-    "X obj = new X();\nThread t=new Thread(X);": false,
-    "X x = new X();\nThread t=new Thread();\nx.run();": false,
-    "Thread t = new Thread(X());\nt.start();": false,
+    "X obj = new X();  Thread t=new Thread(obj);  t.start();": true,
+    "X obj = new X();  Thread t=new Thread(X);": false,
+    "X x = new X();  Thread t=new Thread();  x.run();": false,
+    "Thread t = new Thread(X());  t.start();": false,
     "None of these": false,
-    "Thread t = new Thread(new X());\nt.start();": true
+    "Thread t = new Thread(new X());  t.start();": true
   },
   "10. What is the result of the following statements?\nList list = new ArrayList();\nlist.add(\"one\");\nlist.add(\"two\");\nlist.add(7);\n6: for (String s: list)\n7: System.out.print(s);": {
     "onetwo": false,
